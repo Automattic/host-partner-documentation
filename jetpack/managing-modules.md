@@ -2,7 +2,7 @@
 
 Occasionally, hosts have asked how they could customize Jetpack's modules. The documentation below will provide use cases and instructions on how to manage modules.
 
-If you have any questions or issues, our contact information can be found on the [README.md document](README.md).
+If you have any questions or issues, our contact information can be found on the [README.md document](../README.md).
 
 ### How to get a list of modules
 

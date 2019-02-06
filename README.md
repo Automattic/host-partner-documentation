@@ -9,15 +9,15 @@ If you have any technical questions or concerns, don’t hesitate to get in touc
 ## Documentation links
 
 - Plan provisioning
-  - [Via CLI](plan-provisioning.md)
-  - [Via direct API call](plan-provisioning-direct-api.md)
-  - [Automatic account creation](automatic-account-creation-connection.md)
-  - [Controlling the redirect after a user finishes connection authorization](redirect-after-authorization.md)
+  - [Via CLI](jetpack/plan-provisioning.md)
+  - [Via direct API call](jetpack/plan-provisioning-direct-api.md)
+  - [Automatic account creation](jetpack/automatic-account-creation-connection.md)
+  - [Controlling the redirect after a user finishes connection authorization](jetpack/redirect-after-authorization.md)
 - Checking status
-  - [Connection status](determining-connection-status.md)
-  - [Provisioning status](determining-provisioning-status.md)
-- [Managing modules](managing-modules.md)
-- [Upgrade redirection](upgrade-redirection.md)
+  - [Connection status](jetpack/determining-connection-status.md)
+  - [Provisioning status](jetpack/determining-provisioning-status.md)
+- [Managing modules](jetpack/managing-modules.md)
+- [Upgrade redirection](jetpack/upgrade-redirection.md)
 
 ## Become a Jetpack Hosting Partner
 
