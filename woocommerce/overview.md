@@ -52,7 +52,7 @@ Below, we'll go over the various integration steps that a hosting partner will n
 
    Documentation can be found [here](update-url.md).
 
-1. **Package/Product Information**
+1. **Package/Extension Information**
 
    Get information about products in a package / host plan. Response includes latest version and download URL to our internal repository, and as such, that makes these endpoints important for ensuring that a hosting partner is installing the latest WooCommerce extensions from their package.
 
