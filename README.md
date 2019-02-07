@@ -31,4 +31,4 @@ If you have any technical questions or concerns, don’t hesitate to get in touc
 
 ## Become a hosting partner
 
-If you're not already a hosting pratner and you'd like some more information, head on over to [https://jetpack.com/for/hosts/](https://jetpack.com/for/hosts/) to get started!
+If you're not already a hosting partner and you'd like some more information, head on over to [https://jetpack.com/for/hosts/](https://jetpack.com/for/hosts/) to get started!
