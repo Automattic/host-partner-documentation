@@ -21,13 +21,13 @@ If you have any technical questions or concerns, don’t hesitate to get in touc
     - [Provisioning status](jetpack/determining-provisioning-status.md)
   - [Managing modules](jetpack/managing-modules.md)
   - [Upgrade redirection](jetpack/upgrade-redirection.md)
+  - [Automatic account creation](jetpack/automatic-account-creation-connection.md)
 - WooCommerce
   - [Overview](woocommerce/overview.md)
   - [Provison/Register plan](woocommerce/plan-register.md)
   - [Cancel plan](woocommerce/plan-cancel.md)
   - [Update URL for a site](woocommerce/update-url.md)
   - [Extension information](woocommerce/extension-info.md)
-- [Automatic account creation](woocommerce/jetpack/automatic-account-creation-connection.md)
 
 ## Become a hosting partner
 
