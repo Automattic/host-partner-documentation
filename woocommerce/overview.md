@@ -36,7 +36,7 @@ Below, we'll go over the various integration steps that a hosting partner will n
 
    Documentation can be found [here](plan-register.md).
 
-2. **Cancellation**
+1. **Cancellation**
 
    Once a WPCOM plan is expired, a request to the WooCommerce.com [cancel](plan-cancel.md) endpoint
    must be made. This will cancel the order created from the registration request and
@@ -46,13 +46,13 @@ Below, we'll go over the various integration steps that a hosting partner will n
 
    Documentation can be found [here](plan-cancel.md).
 
-3. **Update URL**
+1. **Update URL**
 
    Update a customer site URL for a WooCommerce.com-connected site.
 
    Documentation can be found [here](update-url.md).
 
-4. **Package/Product Information**
+1. **Package/Product Information**
 
    Get information about products in a package / host plan. Response includes latest version and download URL to our internal repository, and as such, that makes these endpoints important for ensuring that a hosting partner is installing the latest WooCommerce extensions from their package.
 
