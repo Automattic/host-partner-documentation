@@ -1,4 +1,4 @@
-### Update Site URL
+# Update Site URL
 
 Update customer site URL for a WooCommerce.com-connected site.
 
@@ -21,7 +21,8 @@ curl -i -X POST 'https://woocommerce.com/wp-json/wccom/host-plan/v1.0/update-url
 HTTP/1.1 200 OK
 true
 ```
-#### Parameters
+
+## Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -43,7 +44,7 @@ hash_hmac( 'sha256', 'https://example.com', $access_token_secret );
 }
 ```
 
-#### Response
+## Response
 
 ```
 HTTP/1.1 200 OK

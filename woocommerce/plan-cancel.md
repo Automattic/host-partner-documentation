@@ -1,4 +1,4 @@
-### Cancel
+# Cancel
 
 Cancel the order created from host plan registration.
 
@@ -23,7 +23,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-#### Parameters
+## Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -35,7 +35,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-#### Response
+## Response
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

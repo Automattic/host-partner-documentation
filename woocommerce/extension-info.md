@@ -1,14 +1,30 @@
-### Host Plan Info
+# Extension Information
 
-Get information about a host plan.
+The following endpoints will allow you to retrieve information about all extensions for a package or a single extension from a package. The expected information for an extension will look like this:
 
+```json
+{
+  "name": "Facebook for WooCommerce",
+  "version": "1.9.6",
+  "last_updated": "2018-09-21",
+  "download_link": "http://woothemes-products.s3.amazonaws.com/plugin-packages/facebook-for-woocommerce/facebook-for-woocommerce.zip?AWSAccessKeyId=AKIAJE6A7GBT4ZRLENMA&Expires=1541139531&Signature=iJMJrkCsUqJNPvctF3HQVZ2ubMI%3D",
+  "slug": "facebook-for-woocommerce",
+  "homepage": "https://woocommerce.test/products/facebook/"
+
+}
 ```
+
+## All Extensions Information
+
+Get information all of the extensions in a package.
+
+```code
 GET /info
 ```
 
 Example request:
 
-```
+```code
 curl -i -X POST 'https://woocommerce.com/wp-json/wccom/host-plan/v1.0/info' \
   -H 'Authorization: Bearer <key>' \
   -H 'Content-Type: application/json'
@@ -121,17 +137,17 @@ HTTP/1.1 200 OK
 }
 ```
 
-### Product Info
+## Single Extension Information
 
 Get information about a product in a package.
 
-```
+```code
 GET /info/<slug>.json
 ```
 
 Example request:
 
-```
+```code
 curl -i -X POST 'https://woocommerce.com/wp-json/wccom/host-plan/v1.0/info/facebook-for-woocommerce.json' \
   -H 'Authorization: Bearer <key>' \
   -H 'Content-Type: application/json'

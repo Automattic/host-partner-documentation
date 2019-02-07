@@ -1,4 +1,4 @@
-### Register
+# Register
 
 Register a new WooCommerce.com customer with initial order of a host plan.
 
@@ -31,7 +31,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-#### Parameters
+## Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -62,7 +62,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-#### Response
+## Response
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
