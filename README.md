@@ -15,13 +15,19 @@ If you have any technical questions or concerns, don’t hesitate to get in touc
   - Plan provisioning
     - [Via CLI](jetpack/plan-provisioning.md)
     - [Via direct API call](jetpack/plan-provisioning-direct-api.md)
-  - [Automatic account creation](jetpack/automatic-account-creation-connection.md)
   - [Controlling the redirect after a user finishes connection authorization](jetpack/redirect-after-authorization.md)
   - Checking status
     - [Connection status](jetpack/determining-connection-status.md)
     - [Provisioning status](jetpack/determining-provisioning-status.md)
   - [Managing modules](jetpack/managing-modules.md)
   - [Upgrade redirection](jetpack/upgrade-redirection.md)
+- WooCommerce
+  - [Overview](woocommerce/overview.md)
+  - [Provison/Register plan](woocommerce/plan-register.md)
+  - [Cancel plan](woocommerce/plan-cancel.md)
+  - [Update URL for a site](woocommerce/update-url.md)
+  - [Extension information](woocommerce/extension-info.md)
+- [Automatic account creation](woocommerce/jetpack/automatic-account-creation-connection.md)
 
 ## Become a hosting partner
 
