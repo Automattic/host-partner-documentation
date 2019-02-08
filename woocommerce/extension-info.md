@@ -25,7 +25,7 @@ GET /info
 Example request:
 
 ```code
-curl -i -X POST 'https://woocommerce.com/wp-json/wccom/host-plan/v1.0/info' \
+curl -i -X GET 'https://woocommerce.com/wp-json/wccom/host-plan/v1.0/info' \
   -H 'Authorization: Bearer <key>' \
   -H 'Content-Type: application/json'
 
@@ -148,7 +148,7 @@ GET /info/<slug>.json
 Example request:
 
 ```code
-curl -i -X POST 'https://woocommerce.com/wp-json/wccom/host-plan/v1.0/info/facebook-for-woocommerce.json' \
+curl -i -X GET 'https://woocommerce.com/wp-json/wccom/host-plan/v1.0/info/facebook-for-woocommerce.json' \
   -H 'Authorization: Bearer <key>' \
   -H 'Content-Type: application/json'
 
