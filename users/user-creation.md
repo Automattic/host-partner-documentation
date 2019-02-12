@@ -11,7 +11,7 @@ Aside from [automatic account creation](/jetpack/automatic-account-creation-conn
 ## Request Parameters (/user)
 
 - __email__: The email address for the user that will be created.
-- __product_type__: The product type that is being provisioned for the user being created either `woocommerce` or `jetpack`
+- __product_type__: The product type that is being provisioned for the user being created. This is either `woocommerce` or `jetpack`
 
 
 ## Response Parameters (/user)
