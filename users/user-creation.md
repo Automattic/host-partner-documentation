@@ -2,6 +2,8 @@
 
 Aside from [automatic account creation](/jetpack/automatic-account-creation-connection.md) there is an endpoint available for creating a WordPress.com user. This endpoint assumes the user creation is part of a product provisioning flow, such as provisioning a WooCommerce package to someone that does not yet have a WordPress.com account.
 
+## Authentication
+In order to make use of this endpoint you will need to be authenticated. Information on this can be found [here](/jetpack/plan-provisioning-direct-api.md###endpoint-information)
 
 ## Endpoint Information (/user)
 
@@ -40,3 +42,18 @@ The following is non-exhaustive list of errors that could be returned.
 | 400 | invalid_input_unknown_product_id | The supplied product ID is unknown. |
 | 400 | user_exists | A WordPress.com user with given email address already exists. |
 | 500 | error_access_token | Failure to create acess token
+
+## Examples
+
+
+```shell
+$ACCESS_TOKEN="your_partner_access_token_here"
+RESULT=$( curl --request POST \
+  --url https://public-api.wordpress.com/rest/v1.3/jpphp/user \
+  --header "authorization: Bearer $ACCESS_TOKEN" \
+  --header 'cache-control: no-cache' \
+  --form product_type=product_type_here \
+  --form email=user@example.com )
+```
+
+
