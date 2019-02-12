@@ -45,15 +45,12 @@ The following is non-exhaustive list of errors that could be returned.
 
 ## Examples
 
-
+***Replace access_token, product_type and email requirements***
 ```shell
-$ACCESS_TOKEN="your_partner_access_token_here"
-RESULT=$( curl --request POST \
-  --url https://public-api.wordpress.com/rest/v1.3/jpphp/user \
-  --header "authorization: Bearer $ACCESS_TOKEN" \
-  --header 'cache-control: no-cache' \
-  --form product_type=product_type_here \
-  --form email=user@example.com )
+RESULT=$( curl -X POST \
+  https://public-api.wordpress.com/rest/v1.3/jpphp/user \
+  -H 'Authorization: Bearer {access_token}' \
+  -H 'cache-control: no-cache' \
+  -F product_tye={product_type} \
+  -F email={email} )
 ```
-
-
