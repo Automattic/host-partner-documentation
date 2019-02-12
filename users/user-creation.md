@@ -20,17 +20,17 @@ In order to make use of this endpoint you will need to be authenticated. Informa
 
 Below, the responses are grouped by whether the call to create a user was succesful or not.
 
-## Successful response
+### Successful response
 
 - __success__: (bool) Was the operation successful?.
 - __bearer_token__: (string) The access token for the newly created user.
 
-## Errored response
+### Errored response
 
 - __error_code__: (string) Error code, if any.
 - __error_message__: (string) Error message, if any.
 
-## Endpoint Errors (/user)
+### Endpoint Errors (/user)
 
 The following is non-exhaustive list of errors that could be returned.
 
