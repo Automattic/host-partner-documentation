@@ -45,7 +45,6 @@ The following is non-exhaustive list of errors that could be returned.
 
 ## Examples
 
-
 ```shell
 $ACCESS_TOKEN="your_partner_access_token_here"
 RESULT=$( curl --request POST \
@@ -55,5 +54,3 @@ RESULT=$( curl --request POST \
   --form product_type=product_type_here \
   --form email=user@example.com )
 ```
-
-
