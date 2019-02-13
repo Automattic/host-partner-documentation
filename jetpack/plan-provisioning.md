@@ -30,8 +30,7 @@ Further in this document, you will find a few CLI commands with various argument
 - `url`                   : This optional URL value is used to select a specific subsite in a network. See: https://make.wordpress.org/cli/handbook/config/#global-parameters.
 - `onboarding`            : This optional value can be set to `1` to enabled an onboarding wizard.
 - `partner_tracking_id`   : This optional value allows us to attach specific actions to a specific site on the partner's side. This has proved useful in cases where users had multiple staging sites.
-- `home_url`              : This optional value allows overriding the `home` value when registering a site. This has been useful on hosts where the domain is set via a constant.
-- `site_url`              : This optional value allows overriding the `siteurl` value when registering a site. This has been useful on hosts where the domain is set via a constant.
+- `wp-cli-path`           : Allows setting the path of WP-CLI.
 
 ### Provisioning a single plan for a given site
 
