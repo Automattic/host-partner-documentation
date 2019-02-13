@@ -2,6 +2,11 @@
 
 Aside from [automatic account creation](/jetpack/automatic-account-creation-connection.md) there is an endpoint available for creating a WordPress.com user. This endpoint assumes the user creation is part of a product provisioning flow, such as provisioning a WooCommerce package to someone that does not yet have a WordPress.com account.
 
+To successfully create a WordPress.com account for a given user, there are two pre-requisites that must be met:
+
+- The hosting partner making the request must be whitelisted.
+- There must not be an existing WordPress.com account for the given email.
+
 ## Authentication
 In order to make use of this endpoint you will need to be authenticated. Information on this can be found [here](/jetpack/plan-provisioning-direct-api.md###endpoint-information)
 
