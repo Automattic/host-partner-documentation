@@ -2,12 +2,7 @@
 
 In this directory, you'll find information on provisioning and managing plans for Automattic products as well as information on managing the products themselves.
 
-If you have any technical questions or concerns, don’t hesitate to get in touch with our team via Slack or by emailing us at one of the addresses below:
-
-- Eric Binnion – eric.binnion@automattic.com
-- Oli Ikeme – oli.ikeme@automattic.com
-- George Stephanis – georgestephanis@automattic.com
-- Alex Mills – alexm@automattic.com
+If you have any technical questions or concerns, don’t hesitate to get in touch with our team via Slack or by emailing us at `partners@jetpack.com`.
 
 ## Documentation links
 
