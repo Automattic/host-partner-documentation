@@ -82,3 +82,5 @@ HTTP/1.1 200 OK
   "site_id":42506
 }
 ```
+
+Note: The `access_token_secret` field will only be a valid secret for the first time a plan is registered to a given site. Afterwards, `access_token_secret` will contain `null` as its value.
