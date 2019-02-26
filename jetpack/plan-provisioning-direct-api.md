@@ -134,6 +134,10 @@ The following is non-exhaustive list of errors that could be returned.
 | 400       | plan_downgrade_disallowed | Can not automatically downgrade plans. Contact support.                   |
 | 400       | invalid_plan              | %s is not a valid plan                                                    |
 | 403       | invalid_scope             | This token is not authorized to provision partner sites                   |
+| 400       | method_not_found          | remoteRegister method not found on remote site.                           |
+| 400       | method_not_found          | remoteProvision method not found on remote site. Try calling again with --force_register=true. |
+
+For more explanation about the `method_not_found` errors, including solutions, please see [this documentation](method-not-found.md).
 
 ### Examples (/provision)
 
