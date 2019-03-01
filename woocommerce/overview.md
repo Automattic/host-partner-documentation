@@ -34,6 +34,8 @@ Below, we'll go over the various integration steps that a hosting partner will n
 
    **Note** `WC_Helper_Options` is available when WooCommerce is activated.
 
+   **Note** See [Considerations for WP-CLI](considerations-for-wp-cli.md) if you will be running the above via WP-CLI.
+
    Documentation can be found [here](plan-register.md). For an overview of the flow see the following flowchart:
 
    ![WooCommerce registration flow](/assets/woocommerce-register-flow-chart.png)
