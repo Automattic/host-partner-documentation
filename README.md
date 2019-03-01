@@ -21,7 +21,7 @@ If you have any technical questions or concerns, don’t hesitate to get in touc
   - [Provison/Register plan](woocommerce/plan-register.md)
   - [Cancel plan](woocommerce/plan-cancel.md)
   - [Update URL for a site](woocommerce/update-url.md)
-  - [Extension information](woocommerce/extension-info.md)
+  - [Product information](woocommerce/product-info.md)
   - [Considerations for WP-CLI](woocommerce/considerations-for-wp-cli.md)
 - Account creation
   - [Creating users via /jpphp/user endpoint](users/user-creation.md)

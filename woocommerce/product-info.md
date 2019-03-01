@@ -1,10 +1,11 @@
-# Extension Information
+# Package Information
 
-The following endpoints will allow you to retrieve information about all extensions for a package or a single extension from a package. The expected information for an extension will look like this:
+The following endpoints will allow you to retrieve information about all products for a package or a single product from a package. The expected information for a product will look like this:
 
 ```json
 {
   "name": "Facebook for WooCommerce",
+  "type": "plugin",
   "version": "1.9.6",
   "last_updated": "2018-09-21",
   "download_link": "http://woothemes-products.s3.amazonaws.com/plugin-packages/facebook-for-woocommerce/facebook-for-woocommerce.zip?AWSAccessKeyId=AKIAJE6A7GBT4ZRLENMA&Expires=1541139531&Signature=iJMJrkCsUqJNPvctF3HQVZ2ubMI%3D",
@@ -14,9 +15,11 @@ The following endpoints will allow you to retrieve information about all extensi
 }
 ```
 
-## All Extensions Information
+**Note:** `type` is not supplied in the `/info/<slug>.json` endpoint.
 
-Get information all of the extensions in a package.
+## All Products Information
+
+Get information all of the products in a package.
 
 ```code
 GET /info
@@ -137,7 +140,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-## Single Extension Information
+## Single Product Information
 
 Get information about a product in a package.
 
