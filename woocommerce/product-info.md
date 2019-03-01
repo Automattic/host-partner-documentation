@@ -17,6 +17,12 @@ The following endpoints will allow you to retrieve information about all product
 
 **Note:** `type` is not supplied in the `/info/<slug>.json` endpoint.
 
+## Table of contents
+
+- [All Products Information](#all-products-information)
+- [Single Product Information](#single-product-information)
+- [Tips and Tricks](#tips-and-tricks)
+
 ## All Products Information
 
 Get information all of the products in a package.
@@ -165,4 +171,49 @@ HTTP/1.1 200 OK
   "homepage": "https://woocommerce.test/products/facebook/"
 
 }
+```
+
+## Tips and Tricks
+
+Using [jq](https://stedolan.github.io/jq/), hosting partners can slice up this data in interesting, useful ways. Below are some examples that hosting partners may find helpful:
+
+### Get all of the slugs
+
+```
+curl -s GET 'https://woocommerce.com/wp-json/wccom/host-plan/v1.0/info' \
+  -H 'Authorization: Bearer <key>' \
+  -H 'Content-Type: application/json' | jq '.products[].slug'
+```
+
+**Note:** You can substitute `download_link` or another product field for `slug` above to information for that field. For example:
+
+### Get all products that are themes
+
+```
+curl -s GET 'https://woocommerce.com/wp-json/wccom/host-plan/v1.0/info' \
+  -H 'Authorization: Bearer <key>' \
+  -H 'Content-Type: application/json' | jq '.products[] | select( .type == "theme" )'
+```
+
+**Note:** You can substitute `plugin` for `theme` above to get all extensions.
+
+### Get products that were updated on or after a specified day
+
+The following will return all products that were updated on, or after, `2019-02-14`.
+
+```
+curl -s GET 'https://woocommerce.com/wp-json/wccom/host-plan/v1.0/info' \
+  -H 'Authorization: Bearer <key>' \
+  -H 'Content-Type: application/json' | jq '.products[] | select( .last_updated >= "2019-02-14" )'
+```
+
+### Combining the above
+
+The following snippet will get the **slug** of all products that are of **theme** type where the theme has been updated after `2019-01-01`.
+
+```
+curl -s GET 'https://woocommerce.com/wp-json/wccom/host-plan/v1.0/info' \
+  -H 'Authorization: Bearer <key>' \
+  -H 'Content-Type: application/json' \
+  | jq '.products[] | select( .last_updated >= "2019-01-01" ) | select( .type == "theme" ) | .slug'
 ```
