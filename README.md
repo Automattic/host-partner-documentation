@@ -22,7 +22,7 @@ If you have any technical questions or concerns, don’t hesitate to get in touc
   - [Cancel plan](woocommerce/plan-cancel.md)
   - [Update URL for a site](woocommerce/update-url.md)
   - [Product information](woocommerce/product-info.md)
-  - [Considerations for WP-CLI](woocommerce/considerations-for-wp-cli.md)
+  - [Management via WP-CLI](woocommerce/management-via-wp-cli.md)
 - Account creation
   - [Creating users via /jpphp/user endpoint](users/user-creation.md)
   - [Automatic account creation via Jetpack](jetpack/automatic-account-creation-connection.md)
