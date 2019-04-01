@@ -38,7 +38,7 @@ HTTP/1.1 200 OK
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | `url` | `string` | Customer site URL. |
-| `wpcom_accesss_token` | `string` | WordPress.com user access token. |
+| `wpcom_access_token` | `string` | WordPress.com user access token. |
 | `products` | `array` | Array of product slugs. This is optional. |
 
 ```code
@@ -99,8 +99,8 @@ HTTP/1.1 200 OK
 | `first_name` | `string` | Customer first name. |
 | `last_name` | `string` | Customer last name. |
 | `email` | `string` | Customer email address. Required |
-| `wpcom_user_id` | `integer` | WordPress.com user ID. Optional if `wpcom_accesss_token` is passed and will be deprecated in the future. |
-| `wpcom_accesss_token` | `string` | WordPress.com user access token. |
+| `wpcom_user_id` | `integer` | WordPress.com user ID. Optional if `wpcom_access_token` is passed and will be deprecated in the future. |
+| `wpcom_access_token` | `string` | WordPress.com user access token. |
 
 ```code
 {
