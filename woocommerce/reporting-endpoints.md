@@ -111,6 +111,32 @@ Status: 200 OK
 }
 ```
 
+### Example Request and Response (orders/<order_id>)
+
+```code
+curl -i -X GET \
+  https://woocommerce.com/wp-json/wccom/host-plan/v2.0/orders/3960664 \
+  -H 'Authorization: Bearer <key>' \
+  -H 'cache-control: no-cache'
+
+HTTP/2 200
+{
+    "id": 3960664,
+    "status": "completed",
+    "date_created": "2019-03-21T21:05:13",
+    "date_created_gmt": "2019-03-21T19:05:13",
+    "date_modified": "2019-03-21T21:05:13",
+    "date_modified_gmt": "2019-03-21T19:05:13",
+    "customer_id": 1208567,
+    "customer_email": "user@example.com",
+    "line_items": [
+        {
+            "name": "eCommerce Plan"
+        }
+    ]
+}
+```
+
 ## List order connections
 
 List all connected products in an order.
