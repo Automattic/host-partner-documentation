@@ -19,6 +19,7 @@ In order to make use of this endpoint you will need to be authenticated. Informa
 
 - __email__: The email address for the user that will be created.
 - __product_type__: The product type that is being provisioned for the user being created. This is either `woocommerce` or `jetpack`
+- __language__(optional): The language for the user being created. Used to ensure that the email sent to the user to verify their account is translated.
 
 
 ## Response Parameters (/user)
