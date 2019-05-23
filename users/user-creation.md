@@ -19,7 +19,7 @@ In order to make use of this endpoint you will need to be authenticated. Informa
 
 - __email__: The email address for the user that will be created.
 - __product_type__: The product type that is being provisioned for the user being created. This is either `woocommerce` or `jetpack`
-- __language__(optional): The ISO 639 code for thelanguage for the user being created. Used to ensure that the email sent to the user to verify their account is translated.
+- __language__(optional): The ISO 639 code for the language for the user being created. Used to ensure that the email sent to the user to verify their account is translated. Supported languages include: en,af,ar,as,be,bg,bm,bn,bo,ca,cs,csb,cy,da,de,dz,el,eo,es,et,fa,fi,fo,fr,fur,fy,ga,gu,he,hi,hu,ia,id,is,it,ja,ka,km,kn,ko,ku,la,li,lo,lt,ml,ms,nds,nl,nn,no,non,nv,oc,or,os,pa,pl,ps,pt,ro,ru,sc,sk,sl,sq,sr,sv,ta,te,th,tt,uk,ur,wa,yi,tr,az,als,arc,ast,av,ay,ba,br,ce,cv,dv,eu,gn,hr,ii,ks,kv,mk,nah,nap,pt-br,qu,sd,su,ty,udm,ug,vec,vi,xal,za,zh-cn,zh-tw,lv,bs,tl,ne,gl,uz,so,mr,kk,va,mwl,mt,hy,el-po,ilo,si,mn,fil,fr-ch,fr-ca,gd,yo,fr-be,ky,tir,am,en-gb,mya,rup
 
 
 ## Response Parameters (/user)
