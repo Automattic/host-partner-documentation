@@ -15,7 +15,7 @@ To query this status endpoint, you'll first need to retrieve an access token. In
 ## Endpoint Information
 
 - __Method__: GET
-- __URL__:    `https://public-api.wordpress.com/rest/v1.2/jpphp/{$site}/status`
+- __URL__:    `https://public-api.wordpress.com/rest/v1.3/jpphp/{$site}/status`
 
 `$site` is the site's domain and path where `/` in the path is replaced with `::`. For example:
 
@@ -54,7 +54,7 @@ Here's an example using cURL in shell.
 ACCESS_TOKEN="access_token_here"
 SITE_DOMAIN="example.com"
 curl --request GET \
-    --url https://public-api.wordpress.com/rest/v1.2/jpphp/"$SITE_DOMAIN"/status \
+    --url https://public-api.wordpress.com/rest/v1.3/jpphp/"$SITE_DOMAIN"/status \
     --header "authorization: Bearer $ACCESS_TOKEN" \
     --header 'cache-control: no-cache' \
 ```
@@ -68,7 +68,7 @@ var siteDomain = 'example.com';
 
 var options = {
     method: 'GET',
-    url: 'https://public-api.wordpress.com/rest/v1.2/jpphp/' + siteDomain + '/status',
+    url: 'https://public-api.wordpress.com/rest/v1.3/jpphp/' + siteDomain + '/status',
     headers: {
         'cache-control': 'no-cache',
         authorization: 'Bearer ' + accessToken
