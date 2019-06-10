@@ -17,6 +17,7 @@ If you have any technical questions or concerns, don’t hesitate to get in touc
   - [Managing modules](jetpack/managing-modules.md)
   - [Upgrade redirection](jetpack/upgrade-redirection.md)
   - [Monitor downtime notificatiosn webhook](jetpack/monitor-downtime-notifications-webhook.md)
+  - [Magic mobile links](jetpack/mobile-magic-link.md)
 - WooCommerce
   - [Overview](woocommerce/overview.md)
   - [Provison/Register plan](woocommerce/plan-register.md)
