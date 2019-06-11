@@ -11,14 +11,14 @@ Partners can request that users be sent an email with a "magic" link that will a
 
 - __email__: The user's email to send the magic link to.
 
-#### Successful response
+### Successful response
 
 - __success__:       (bool) Was the operation successful?
 
-#### Errored response
+### Errored response
 
-- __error_code__:    (string) Error code, if any.
-- __error_message__: (string) Error message, if any.
+- __error__:    (string) Error code, if any.
+- __message__: (string) Error message, if any.
 
 ### Example
 
@@ -31,4 +31,12 @@ curl --request POST \
     --header 'content-type: multipart/form-data;' \
     --header "authorization: Bearer $ACCESS_TOKEN" \
     --form email="$EMAIL"
+```
+
+### Notes
+
+This endpoint is throttled and will only allow up to 5 requests per email per hour. If this limit is exceeded the following error will be returned:
+
+```json
+{"error":"too_many_requests","message":"Too many requests per time interval"}
 ```
