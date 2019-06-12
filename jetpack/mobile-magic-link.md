@@ -13,16 +13,16 @@ Partners can request that users be sent an email with a "magic" link that will a
 
 ### Successful response
 
-- __success__:       (bool) Was the operation successful?
+- __success__: (bool) Was the operation successful?
 
 ### Errored response
 
-- __error__:    (string) Error code, if any.
+- __error__:   (string) Error code, if any.
 - __message__: (string) Error message, if any.
 
 ### Example
 
-Here is an example using cURL in shell.
+Here is an example using cURL in shell. Note that for this call, `$ACCESS_TOKEN` should be a `jetpack-partner` scope token.
 
 ```bash
 curl --request POST \
