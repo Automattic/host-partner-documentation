@@ -100,13 +100,20 @@ Plans can be provisioned by making a request using your partner token from the s
 
 ### Request Parameters (/provision)
 
-- __local_user__:     The username, ID or email on the local website (not the WordPress.com username) that should own the plan. The corresponding user _must_ already exist.
-- __siteurl__:        The URL where the WordPress core files reside.
-- __plan__:           A slug representing which plan to provision. One of `free`, `personal`, `premium`, or `professional`.
-- __force_register__: (optional) A true/false value indicating whether to re-register a site even if we already have tokens for it. Useful for sites that have gotten into a bad state.
-- __force_connect__:  (optional) A true/false value indicating whether to re-connect a user even if we already have tokens for them. Useful for sites that have gotten into a bad state.
-- __onboarding__:     (optional) If true, put the user through our onboarding wizard for new sites.
-- __wpcom_user_id__:  (optional) For certain keys, enables auto-connecting a WordPress.com user to the site non-interactively.
+- __local_user__:      The username, ID or email on the local website (not the WordPress.com username) that should own the plan. The corresponding user _must_ already exist.
+- __siteurl__:         The URL where the WordPress core files reside.
+- __plan__:            A slug representing which plan to provision. One of `free`, `personal`, `premium`, or `professional`.
+- __force_register__:  (optional) A true/false value indicating whether to re-register a site even if we already have tokens for it. Useful for sites that have gotten into a bad state.
+- __force_connect__:   (optional) A true/false value indicating whether to re-connect a user even if we already have tokens for them. Useful for sites that have gotten into a bad state.
+- __onboarding__:      (optional) If true, put the user through our onboarding wizard for new sites.
+- __wpcom_user_id__:   (optional) For certain keys, enables auto-connecting a WordPress.com user to the site non-interactively.
+- __ssh_user__:        (optional) Set SSH user.
+- __ssh_pass__:        (optional) Set SSH password.
+- __ssh_private_key__: (optional) Set SSH private key.
+- __ssh_host__:        (optional) Set SSH host. Will be deduced from `siteurl` if missing.
+- __ssh_port__:        (optional) Set SSH port. Will default to 22 is missing.
+
+_Note: All the SSH parameters are optional but if you pass `ssh_user` you will need to either pass `ssh_pass` or `ssh_private_key`._
 
 ### Response Parameters (/provision)
 
@@ -117,6 +124,11 @@ Below, the responses are grouped by whether the call to provision a plan was suc
 - __success__:       (bool) Was the operation successful?.
 - __auth_required__: (bool) Does the user need to authorize the connection on WordPress.com to finish provisioning?
 - __next_url__:      (string) When `auth_required` is true, the URL to redirect the user to in order to finish authorization.
+
+If SSH parameters have been passed, these extra fields will be present in the response:
+
+- __ssh_set__:       (bool) Weather the SSH credentials have been saved or not.
+- __ssh_error__:     (string) Empty if save was successful, otherwise contains the error message.
 
 #### Errored response
 
