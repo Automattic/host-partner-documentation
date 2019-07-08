@@ -31,6 +31,13 @@ Further in this document, you will find a few CLI commands with various argument
 - `onboarding`            : This optional value can be set to `1` to enabled an onboarding wizard.
 - `partner_tracking_id`   : This optional value allows us to attach specific actions to a specific site on the partner's side. This has proved useful in cases where users had multiple staging sites.
 - `wp-cli-path`           : Allows setting the path of WP-CLI.
+- `ssh-host`              : The SSH host for Jetpack Backups remote access.
+- `ssh-user`              : The SSH user for Jetpack Backups remote access.
+- `ssh-pass`              : The SSH password for Jetpack Backups remote access.
+- `ssh-private-key`       : The local path to the SSH private key file for Jetpack Backups remote access.
+- `ssh-port`              : The SSH port for Jetpack Backups remote access.
+
+_Note: All the SSH parameters are optional but if you pass `ssh-user` you will need to either pass `ssh-pass` or `ssh-private-key`. Setting SSH credentials is currently in beta._
 
 ### Provisioning a single plan for a given site
 
