@@ -33,6 +33,10 @@ curl --request POST \
     --form email="$EMAIL"
 ```
 
+Here is an example of the email that is sent.
+
+![alt text](https://github.com/Automattic/host-partner-documentation/assets/sample-magic-link-email.png "Sample magic link email")
+
 ### Notes
 
 This endpoint is throttled and will only allow up to 5 requests per email per hour. If this limit is exceeded the following error will be returned:
