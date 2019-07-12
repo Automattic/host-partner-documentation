@@ -18,6 +18,7 @@ If you have any technical questions or concerns, don’t hesitate to get in touc
   - [Upgrade redirection](jetpack/upgrade-redirection.md)
   - [Monitor downtime notificatiosn webhook](jetpack/monitor-downtime-notifications-webhook.md)
   - [Magic mobile links](jetpack/mobile-magic-link.md)
+  - [Setting Backups SSH credentials](jetpack/setting-backups-ssh-credentials.md)
 - WooCommerce
   - [Overview](woocommerce/overview.md)
   - [Provison/Register plan](woocommerce/plan-register.md)
