@@ -35,7 +35,7 @@ curl --request POST \
 
 Here is an example of the email that is sent.
 
-![alt text](https://github.com/Automattic/host-partner-documentation/assets/sample-magic-link-email.png "Sample magic link email")
+![Magic links screenshot](/assets/sample-magic-link-email.png)
 
 ### Notes
 
