@@ -1,7 +1,5 @@
 # Setting Jetpack Backups SSH credentials
 
-_Setting SSH credentials is currently in beta._
-
 There are two ways to set Jetpack Backups SSH credentials. One way of doing this is during [plan provisioning](jetpack/plan-provisioning.md). The second one is by calling the `/jpphp/{blog_id}/ssh-credentials` endpoint directly. This document explains the latter.
 
 ## Getting an access token

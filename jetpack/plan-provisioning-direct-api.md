@@ -113,7 +113,7 @@ Plans can be provisioned by making a request using your partner token from the s
 - __ssh_host__:        (optional) Set SSH host. Will be deduced from `siteurl` if missing.
 - __ssh_port__:        (optional) Set SSH port. Will default to 22 is missing.
 
-_Note: All the SSH parameters are optional but if you pass `ssh_user` you will need to either pass `ssh_pass` or `ssh_private_key`. Setting SSH credentials is currently in beta._
+_Note: All the SSH parameters are optional but if you pass `ssh_user` you will need to either pass `ssh_pass` or `ssh_private_key`._
 
 ### Response Parameters (/provision)
 
