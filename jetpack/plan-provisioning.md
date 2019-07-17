@@ -37,7 +37,7 @@ Further in this document, you will find a few CLI commands with various argument
 - `ssh-private-key`       : The local path to the SSH private key file for Jetpack Backups remote access.
 - `ssh-port`              : The SSH port for Jetpack Backups remote access.
 
-_Note: All the SSH parameters are optional but if you pass `ssh-user` you will need to either pass `ssh-pass` or `ssh-private-key`. Setting SSH credentials is currently in beta._
+_Note: All the SSH parameters are optional but if you pass `ssh-user` you will need to either pass `ssh-pass` or `ssh-private-key`._
 
 ### Provisioning a single plan for a given site
 
