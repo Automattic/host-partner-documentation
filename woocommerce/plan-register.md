@@ -40,6 +40,7 @@ HTTP/1.1 200 OK
 | `url` | `string` | Customer site URL. |
 | `wpcom_access_token` | `string` | WordPress.com user access token. |
 | `products` | `array` | Array of product slugs. This is optional. |
+| `metadata` | `object` | Whitelisted key-value pair of custom data. This is optional. |
 
 ```code
 {
@@ -54,6 +55,31 @@ HTTP/1.1 200 OK
   "products": [ 'facebook-for-woocommerce', 'woocommerce-shipping-ups' ]
 }
 ```
+
+`metadata` key-value pair is whitelisted based on host request and can be passed as
+an object:
+
+```
+{
+  "url": "https://example.com",
+  "customer": {
+    "first_name": "John",
+    "last_name": "Doe",
+    "email": "john.doe@example.com",
+    "wpcom_user_id": 123,
+    "wpcom_access_token": "#K(EkA1*$gx*!JrC#DCe45meEAllcnXjhKNM2Eu!if%^BAAx3z(AaOw@t(CVFnjK)))"
+  },
+  "products": [ 'facebook-for-woocommerce', 'woocommerce-shipping-ups' ],
+  "metadata": {
+    "customer_email": "john.doe@example.com",
+    "customer_first_name": "John",
+    "customer_last_name": "Doe"
+  }
+}
+```
+
+To request the metadata, please contact us and provide details of key name (i.e. `customer_email`)
+and its value type (`string` or `email`).
 
 ### Response v2.0
 
