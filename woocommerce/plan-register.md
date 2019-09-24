@@ -45,13 +45,7 @@ HTTP/1.1 200 OK
 ```code
 {
   "url": "https://example.com",
-  "customer": {
-    "first_name": "John",
-    "last_name": "Doe",
-    "email": "john.doe@example.com",
-    "wpcom_user_id": 123,
-    "wpcom_access_token": "#K(EkA1*$gx*!JrC#DCe45meEAllcnXjhKNM2Eu!if%^BAAx3z(AaOw@t(CVFnjK)))"
-  },
+  "wpcom_access_token": "#K(EkA1*$gx*!JrC#DCe45meEAllcnXjhKNM2Eu!if%^BAAx3z(AaOw@t(CVFnjK)))"
   "products": [ 'facebook-for-woocommerce', 'woocommerce-shipping-ups' ]
 }
 ```
@@ -62,13 +56,7 @@ an object:
 ```
 {
   "url": "https://example.com",
-  "customer": {
-    "first_name": "John",
-    "last_name": "Doe",
-    "email": "john.doe@example.com",
-    "wpcom_user_id": 123,
-    "wpcom_access_token": "#K(EkA1*$gx*!JrC#DCe45meEAllcnXjhKNM2Eu!if%^BAAx3z(AaOw@t(CVFnjK)))"
-  },
+  "wpcom_access_token": "#K(EkA1*$gx*!JrC#DCe45meEAllcnXjhKNM2Eu!if%^BAAx3z(AaOw@t(CVFnjK)))"
   "products": [ 'facebook-for-woocommerce', 'woocommerce-shipping-ups' ],
   "metadata": {
     "customer_email": "john.doe@example.com",
