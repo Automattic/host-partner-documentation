@@ -154,7 +154,8 @@ accept-ranges: bytes
         {
             "name": "WooCommerce Bookings"
         }
-    ]
+    ],
+    "metadata": []
 }
 ```
 
