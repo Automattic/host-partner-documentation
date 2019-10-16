@@ -1,6 +1,6 @@
 # Errors
 
-This endpoint returns the error codes than can be returned by the API. It contains an error key and a description in English.
+This endpoint returns the error codes than can be returned by the API. For each possible error, it contains a key and a description in English.
 
 ## Getting an access token
 
