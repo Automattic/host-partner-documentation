@@ -39,9 +39,15 @@ With the above information, specifically the source and the site URL, we are abl
   - Professional plan (the site is upgrading from premium)
   - A comparison page, where plan tiers are compared
 
+## Subsidiaries
+
+In some cases a hosting partner may have multiple subsidiaries that they work with and may want to control upgrade redirects for each subsidiary individually. This means that, for example, the Personal plan upgrade link may go to one url for one subsidiary and to another url for another subsidiary. 
+
+To set this up, the hosting provider will need to set the subsidiary id in their provisioned WordPress sites. Setting the subsidiary id can be done via a filter or an option. More information can be found in the Jetpack repository, more specifically, in the [Partner package documentation](https://github.com/Automattic/jetpack/tree/master/packages/partner).
+
 ## Get started
 
 For hosting partners to get started with upgrade redirecting, there are only two steps:
 
 1) Be sure to register all sites with the partner API
-2) Send us the relevant purchase URLs for the personal, premium, and professional plans as well as a comparison page
+2) Send us the relevant purchase URLs for the personal, premium, and professional plans as well as a comparison page. If using subsidiaries, make sure to note which upgrade url corresponds to which subsidiary.
