@@ -162,7 +162,7 @@ curl --request POST \
   --header 'cache-control: no-cache' \
  --form plan=plan_here \
  --form siteurl=siteurl_here \
- --form local_username=local_username_here
+ --form local_user=local_user_here
 ```
 
 Here's an example using the request module in NodeJS.
