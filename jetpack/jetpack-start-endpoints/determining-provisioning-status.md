@@ -10,7 +10,7 @@ To provide the provisioning status of a site, there is the `/jpphp/{$site}/statu
 
 ## Getting an access token
 
-To query this status endpoint, you'll first need to retrieve an access token. Information about that can be found on the [plan provisioning via API document]( plan-provisioning-direct-api.md#getting-a-jetpack-partner-access-token ).
+To query this status endpoint, you'll first need to retrieve an access token. Information about that can be found on the [plan provisioning via API document](../plan-provisioning.md#getting-a-jetpack-partner-access-token ).
 
 ## Endpoint Information
 
@@ -37,6 +37,7 @@ To query this status endpoint, you'll first need to retrieve an access token. In
 - __is_provisioned_by_calling_partner__: (bool) Does the site have a plan that was provisioned by the partner making this status request?
 - __is_connected__:                      (bool) Is the site connected to WordPress.com?
 - __has_pending_plan__:                  (bool) Does the site have a pending plan that requires connection authorization?
+- __products__: Additional product items provisioned for the site including jetpack backups products and other items.
 
 ## Endpoint errors
 
