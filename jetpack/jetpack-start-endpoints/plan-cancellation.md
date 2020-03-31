@@ -16,7 +16,7 @@ Plans can be cancelled by making a request using your partner token from the ste
 | `example.com/demo/wp` | `example.com::demo::wp` |
 
 ### Request Parameters (/partner-cancel)
-- __plan__: A slug representing which plan or item to cancel. One of `free`, `personal`, `premium`, or `professional` for plans. For backups either `jetpack-backup-realtime` or `jetpack-baackup-daily`. Note this is an optional parameter for Jetpack Plans (Personal, Premium, Professional) but required for cancelling standalone items including Jetpack backups.
+- __plan__: A slug representing which plan or item to cancel. One of `free`, `personal`, `premium`, or `professional` for plans. For backups either `jetpack-backup-realtime` or `jetpack-backup-daily`. Note this is an optional parameter for Jetpack Plans (Personal, Premium, Professional) but required for cancelling standalone items including Jetpack backups.
 - __cancel-all__: Optional. If this option is set to true ALL purchased items provisioned by the calling partner for a given site URL will be cancelled.
 
 

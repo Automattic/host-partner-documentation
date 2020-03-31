@@ -9,7 +9,7 @@ If you have any technical questions or concerns, don’t hesitate to get in touc
 - Jetpack
   - Plan provisioning
     - [Via CLI](jetpack/plan-provisioning.md)
-    - [Via direct API call](jetpack/jetpack-start-endpoints/provisioning.md)
+    - [Via direct API call](jetpack/jetpack-start-endpoints/plan-provisioning.md)
   - [Controlling the redirect after a user finishes connection authorization](jetpack/redirect-after-authorization.md)
   - Checking status
     - [Connection status](jetpack/determining-connection-status.md)
@@ -17,9 +17,9 @@ If you have any technical questions or concerns, don’t hesitate to get in touc
   - [Managing modules](jetpack/managing-modules.md)
   - [Upgrade redirection](jetpack/upgrade-redirection.md)
   - [Monitor downtime notificatiosn webhook](jetpack/monitor-downtime-notifications-webhook.md)
-  - [Magic mobile links](jetpack/jetpack-start/mobile-magic-link.md)
-  - [Setting Backups SSH credentials](jetpack/jetpack-start/setting-backups-ssh-credentials.md)
-  - [Errors](jetpack/jetpack-start/errors.md)
+  - [Magic mobile links](jetpack/jetpack-start-endpoints/mobile-magic-link.md)
+  - [Setting Backups SSH credentials](jetpack/jetpack-start-endpoints/setting-backups-ssh-credentials.md)
+  - [Errors](jetpack/jetpack-start-endpoints/errors.md)
 - WooCommerce
   - [Overview](woocommerce/overview.md)
   - [Provison/Register plan](woocommerce/plan-register.md)
