@@ -32,7 +32,9 @@ Below, the response parameters are grouped by whether the request to cancel erro
 
 - __success__:       (bool) Was the operation successful?. It is possible for success to be false if a plan did not exist for the site.
 
-- - __(cancel-all)__: If the cancel-all request param is set to true additional details will be provided on the status of each individual item cancelled for both pending and full activations. The value of success will be true if all items for the site were succesfully cancelled or false if any single item was not cancelled or there were no plans to cancel.
+- __pending_activations__: (conditional) (array) If cancel-all is set for the request, then this property will be added to the response to indicate all pending activations that were cancelled.
+
+- __activations__: (conditional) (array) If cancel-all is set for the request, then this property will be added to the response to indicate all activations that were cancelled.
 
 #### Errored response (/partner-cancel)
 
