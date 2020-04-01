@@ -17,7 +17,7 @@ Plans can be cancelled by making a request using your partner token from the ste
 
 ### Request Parameters (/partner-cancel)
 - __plan__: A slug representing which plan or item to cancel. One of `free`, `personal`, `premium`, or `professional` for plans. For backups either `jetpack-backup-realtime` or `jetpack-backup-daily`. Note this is an optional parameter for Jetpack Plans (Personal, Premium, Professional) but required for cancelling standalone items including Jetpack backups.
-- __cancel-all__: Optional. If this option is set to true ALL purchased items provisioned by the calling partner for a given site URL will be cancelled.
+- __cancel-all__: Optional. If this option is set to true, ALL purchased items provisioned by the calling partner for a given site URL will be cancelled.
 
 
 ### Query Parameters (/partner-cancel)
@@ -30,7 +30,9 @@ Below, the response parameters are grouped by whether the request to cancel erro
 
 #### Successful response (/partner-cancel)
 
-- __success__:       (bool) Was the operation successful?. It is possible for success to be false if a plan did not exist for the site. If the cancel-all request param is set to true additional details will be provided on the status of each individual item cancelled.
+- __success__:       (bool) Was the operation successful?. It is possible for success to be false if a plan did not exist for the site.
+
+- - __(cancel-all)__: If the cancel-all request param is set to true additional details will be provided on the status of each individual item cancelled for both pending and full activations. The value of success will be true if all items for the site were succesfully cancelled or false if any single item was not cancelled or there were no plans to cancel.
 
 #### Errored response (/partner-cancel)
 
