@@ -8,7 +8,7 @@ To successfully create a WordPress.com account for a given user, there are two p
 - There must not be an existing WordPress.com account for the given email.
 
 ## Authentication
-In order to make use of this endpoint you will need to be authenticated. Information on this can be found [here](/jetpack/plan-provisioning-direct-api.md###endpoint-information)
+In order to make use of this endpoint you will need to be authenticated. Information on this can be found [here](/jetpack/jetpack-start-endpoints/plan-provisioning.md###endpoint-information)
 
 ## Endpoint Information (/user)
 

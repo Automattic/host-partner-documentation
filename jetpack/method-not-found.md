@@ -1,6 +1,6 @@
 # Method Not Found Errors
 
-When calling the [Jetpack provisioning API directly](plan-provisioning-direct-api.md), one side-effect is an increase in communication between WordPress.com/Jetpack servers and the remote site that a hosting partner maintains.
+When calling the [Jetpack provisioning API directly](jetpack/../jetpack-start-endpoints/plan-provisioning.md), one side-effect is an increase in communication between WordPress.com/Jetpack servers and the remote site that a hosting partner maintains.
 
 The primary reason that this communication is necessary is that we require a site to be connected to WordPress.com/Jetpack before a plan can be provisioned to that site. The extra communication handles an initial registration of the site as well as setting secrets and gathering information necessary to create an authorization URL so that a user may authorize a connection between WordPress.com/Jetpack and their site.
 

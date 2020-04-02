@@ -10,7 +10,7 @@ To provide the provisioning status of a site, there is the `/jpphp/{$site}/statu
 
 ## Getting an access token
 
-To query this status endpoint, you'll first need to retrieve an access token. Information about that can be found on the [plan provisioning via API document]( plan-provisioning-direct-api.md#getting-a-jetpack-partner-access-token ).
+To query this status endpoint, you'll first need to retrieve an access token. Information about that can be found on the [Authentication API document](../jetpack-start-endpoints/authentication.md#getting-a-jetpack-partner-access-token ).
 
 ## Endpoint Information
 

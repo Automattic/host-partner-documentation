@@ -4,10 +4,9 @@ There are two ways to set Jetpack Backups SSH credentials. One way of doing this
 
 ## Getting an access token
 
-To query this status endpoint, you'll first need to retrieve an access token. Information about that can be found on the [plan provisioning via API document]( plan-provisioning-direct-api.md#getting-a-jetpack-partner-access-token ).
+To query this endpoint, you'll first need to retrieve an access token. Information about that can be found on the [Authentication API document]( jetpack/../authentication.md#getting-a-jetpack-partner-access-token ).
 
 ## Endpoint Information
-
 - __Method__: POST
 - __URL__:    `https://public-api.wordpress.com/rest/v1.3/jpphp/{$blog_id}/ssh-credentials`
 
