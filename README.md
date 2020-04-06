@@ -13,7 +13,7 @@ If you have any technical questions or concerns, don’t hesitate to get in touc
   - [Controlling the redirect after a user finishes connection authorization](jetpack/redirect-after-authorization.md)
   - Checking status
     - [Connection status](jetpack/determining-connection-status.md)
-    - [Provisioning status](jetpack/determining-provisioning-status.md)
+    - [Provisioning status](jetpack/jetpack-start-endpoints/determining-provisioning-status.md)
   - [Managing modules](jetpack/managing-modules.md)
   - [Upgrade redirection](jetpack/upgrade-redirection.md)
   - [Monitor downtime notificatiosn webhook](jetpack/monitor-downtime-notifications-webhook.md)
