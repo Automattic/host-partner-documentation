@@ -1,16 +1,13 @@
-# Deprecation notice
-
-This version of the endpoint has been deprecated. Please use the [1.4 version of the staus endpoint](jetpack/jetpack-start-endpoints/determining-provisioning-status-v1.4.md) instead.
-
 # Determining Provisioning Status of a Jetpack Site
 
 At times, it may be desirable to check the provisioning status of a site to get information such as:
 
-- Does a given site have a plan provisioned?
-- Was the plan provisioned by a given partner?
+- Does a given site have a plan/product provisioned? If so, which?
+- Does a given site have a pending activation?
+- Was provisioned made by a given partner?
 - Is the site connected to WordPress.com?
 
-To provide the provisioning status of a site, there is the `/jpphp/{$site}/status` endpoint.
+To provide the provisioning status of a site, there is the `/1.4/jpphp/{$site}/status` endpoint.
 
 ## Getting an access token
 
@@ -19,9 +16,12 @@ To query this status endpoint, you'll first need to retrieve an access token. In
 ## Endpoint Information
 
 - __Method__: GET
-- __URL__:    `https://public-api.wordpress.com/rest/v1.3/jpphp/{$site}/status`
+- __URL__:    `https://public-api.wordpress.com/rest/v1.4/jpphp/{$siteOrBlogId}/status`
 
-`$site` is the site's domain and path where `/` in the path is replaced with `::`. For example:
+`$siteOrBlogId` can either be:
+ 
+ - The WordPress.com blog ID.
+ - The site's domain and path where `/` in the path is replaced with `::`. For example:
 
 | Site URL              | $site Identifier        |
 | --------------------- | -------------------     |
@@ -36,18 +36,15 @@ To query this status endpoint, you'll first need to retrieve an access token. In
 
 ## Response Parameters
 
-- __plan__:                              (string) The slug of the provisioned plan or empty string when no plan.
-- __is_partner_plan__:                   (bool) Does the site have a plan that was provisioned by a partner?
-- __is_provisioned_by_calling_partner__: (bool) Does the site have a plan that was provisioned by the partner making this status request?
-- __is_connected__:                      (bool) Is the site connected to WordPress.com?
-- __has_pending_plan__:                  (bool) Does the site have a pending plan that requires connection authorization?
-- __has_backups_credentials__:           (bool) Does the site have Jetpack Backup SSH credentials set?
-- __products__:                          (array) Additional product items provisioned for the site including Jetpack backups products and other items.
-  - __product__:                         (string) The slug of the provisioned product.
-  - __is_partner_product__:              (bool) Was this product provisioned by a partner?
-  - __has_pending_product__:             (bool) Does this product require connection authorization?
+- __blog__:                                (array) Blog specific information.
+  - __is_connected__:                      (bool) Is the site connected to WordPress.com?
+  - __has_backups_credentials__:           (bool) Does the site have Jetpack Backup SSH credentials set?
+- __products__:                            (array) A list with everything that was provisioned for this site.
+  - __slug__:                              (string) The slug of the provisioned product.
+  - __is_provisioned_by_partner__:         (bool) Was this product provisioned by a partner?
   - __is_provisioned_by_calling_partner__: (bool) Was this product provisioned by the partner making this status request?
-
+  - __is_pending__:                        (bool) Does the site have a pending product that requires connection authorization?
+  
 ## Endpoint errors
 
 | HTTP Code | Error Identifier      | Error Message                                                             |
@@ -64,7 +61,7 @@ Here's an example using cURL in shell.
 ACCESS_TOKEN="access_token_here"
 SITE_DOMAIN="example.com"
 curl --request GET \
-    --url https://public-api.wordpress.com/rest/v1.3/jpphp/"$SITE_DOMAIN"/status \
+    --url https://public-api.wordpress.com/rest/v1.4/jpphp/"$SITE_DOMAIN"/status \
     --header "authorization: Bearer $ACCESS_TOKEN" \
     --header 'cache-control: no-cache' \
 ```
@@ -78,7 +75,7 @@ var siteDomain = 'example.com';
 
 var options = {
     method: 'GET',
-    url: 'https://public-api.wordpress.com/rest/v1.3/jpphp/' + siteDomain + '/status',
+    url: 'https://public-api.wordpress.com/rest/v1.4/jpphp/' + siteDomain + '/status',
     headers: {
         'cache-control': 'no-cache',
         authorization: 'Bearer ' + accessToken
