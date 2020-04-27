@@ -7,7 +7,7 @@ At times, it may be desirable to check the provisioning status of a site to get 
 - Was provisioned made by a given partner?
 - Is the site connected to WordPress.com?
 
-To provide the provisioning status of a site, there is the `/1.4/jpphp/{$site}/status` endpoint.
+To provide the provisioning status of a site, there is the `/1.4/jpphp/{$siteOrBlogId}/status` endpoint.
 
 ## Getting an access token
 
