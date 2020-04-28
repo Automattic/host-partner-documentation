@@ -43,7 +43,7 @@ To query this status endpoint, you'll first need to retrieve an access token. In
   - __slug__:                              (string) The slug of the provisioned product.
   - __is_provisioned_by_partner__:         (bool) Was this product provisioned by a partner?
   - __is_provisioned_by_calling_partner__: (bool) Was this product provisioned by the partner making this status request?
-  - __is_pending__:                        (bool) Does the site have a pending product that requires connection authorization?
+  - __is_pending__:                        (bool) Is this product pending connection authorization before being provisioned?
   
 ## Endpoint errors
 
