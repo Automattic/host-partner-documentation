@@ -13,7 +13,7 @@ If you have any technical questions or concerns, don’t hesitate to get in touc
   - [Controlling the redirect after a user finishes connection authorization](jetpack/redirect-after-authorization.md)
   - Checking status
     - [Connection status](jetpack/determining-connection-status.md)
-    - [Provisioning status](jetpack/jetpack-start-endpoints/determining-provisioning-status.md)
+    - [Provisioning status](jetpack/jetpack-start-endpoints/determining-provisioning-status-v1.4.md)
   - [Managing modules](jetpack/managing-modules.md)
   - [Upgrade redirection](jetpack/upgrade-redirection.md)
   - [Monitor downtime notificatiosn webhook](jetpack/monitor-downtime-notifications-webhook.md)
@@ -34,3 +34,7 @@ If you have any technical questions or concerns, don’t hesitate to get in touc
 ## Become a hosting partner
 
 If you're not already a hosting partner and you'd like some more information, head on over to [https://jetpack.com/for/hosts/](https://jetpack.com/for/hosts/) to get started!
+
+## Change log
+
+- 2020-04-27 Added change log. Added page for status endpoint v1.4.
