@@ -14,6 +14,7 @@ If you have any technical questions or concerns, don’t hesitate to get in touc
   - Checking status
     - [Connection status](jetpack/determining-connection-status.md)
     - [Provisioning status](jetpack/jetpack-start-endpoints/determining-provisioning-status.md)
+  - [Upgrade paths](jetpack/jetpack-start-endpoints/upgrade-paths.md)
   - [Managing modules](jetpack/managing-modules.md)
   - [Upgrade redirection](jetpack/upgrade-redirection.md)
   - [Monitor downtime notificatiosn webhook](jetpack/monitor-downtime-notifications-webhook.md)
