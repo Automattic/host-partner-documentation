@@ -14,9 +14,18 @@ To query this status endpoint, you'll first need to retrieve an access token. In
 ### Endpoint information (/provision)
 
 - __Method__: GET
-- __URL__:    `https://public-api.wordpress.com/rest/v1.3/jpphp/{$blog_id}/upgrade-paths`
+- __URL__:    `https://public-api.wordpress.com/rest/v1.3/jpphp/{$siteOrBlogId}/upgrade-paths`
 
-`{$blog_id}` is the WordPress.com blog ID.
+`$siteOrBlogId` can either be:
+ 
+ - The WordPress.com blog ID.
+ - The site's domain and path where `/` in the path is replaced with `::`. For example:
+
+| Site URL              | $site Identifier        |
+| --------------------- | -------------------     |
+| `example.com`         | `example.com`           |
+| `example.com/demo`    | `example.com::demo`     |
+| `example.com/demo/wp` | `example.com::demo::wp` |
 
 ### Response Parameters (/upgrade-paths)
 
@@ -49,7 +58,7 @@ It is important to understand that the above response does not mean that a host 
 - __error__:    (string) Error code, if any.
 - __message__:  (string) Error message, if any.
 
-### Examples (/provision)
+### Examples (/upgrade-paths)
 
 Here's an example using cURL in shell.
 
