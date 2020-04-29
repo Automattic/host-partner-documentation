@@ -7,6 +7,10 @@ The only time when we allow products with overlapping functionality to be provis
 1. A site already has Realtime Backups provisioned. A hosting partner wants to provision Jetpack Professional. Even though Jetpack Professional already includes Realtime Backups, this action *will* be allowed as the site would be gaining extra functionality.
 2. A site already has Jetpack Professional provisioned. A hosting partner wants to provision Realtime Backups. This *will not* be allowed because the site would not gain anything from provisioning Realtime Backups as that same functionality is already included in the existing Jetpack Professional plan. 
 
+## Getting an access token
+
+To query this status endpoint, you'll first need to retrieve an access token. Information about that can be found on the [Authentication API document](../jetpack-start-endpoints/authentication.md#getting-a-jetpack-partner-access-token ).
+
 ### Endpoint information (/provision)
 
 - __Method__: GET
@@ -14,7 +18,7 @@ The only time when we allow products with overlapping functionality to be provis
 
 `{$blog_id}` is the WordPress.com blog ID.
 
-### Response Parameters (/provision)
+### Response Parameters (/upgrade-paths)
 
 Below, the responses are grouped by whether the call was successful or not.
 
