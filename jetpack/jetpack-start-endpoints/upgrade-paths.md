@@ -11,7 +11,7 @@ The only time when we allow products with overlapping functionality to be provis
 
 To query this status endpoint, you'll first need to retrieve an access token. Information about that can be found on the [Authentication API document](../jetpack-start-endpoints/authentication.md#getting-a-jetpack-partner-access-token ).
 
-### Endpoint information (/provision)
+### Endpoint information (/upgrade-paths)
 
 - __Method__: GET
 - __URL__:    `https://public-api.wordpress.com/rest/v1.3/jpphp/{$siteOrBlogId}/upgrade-paths`
