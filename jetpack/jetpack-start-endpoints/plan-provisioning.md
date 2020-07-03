@@ -27,6 +27,10 @@ Plans can be provisioned by making a request using your partner token from the s
 - __ssh_private_key__: (optional) Set SSH private key.
 - __ssh_host__:        (optional) Set SSH host. Will be deduced from `siteurl` if missing.
 - __ssh_port__:        (optional) Set SSH port. Will default to 22 is missing.
+- __ftp_user__:        (optional) Set FTP user.
+- __ftp_pass__:        (optional) Set FTP password.
+- __ftp_host__:        (optional) Set FTP host. Will be deduced from `siteurl` if missing.
+- __ftp_port__:        (optional) Set FTP port. Will default to 21 is missing.
 
 _Note: All the SSH parameters are optional but if you pass `ssh_user` you will need to either pass `ssh_pass` or `ssh_private_key`._
 
