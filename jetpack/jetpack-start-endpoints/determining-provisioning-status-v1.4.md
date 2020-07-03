@@ -38,7 +38,7 @@ To query this status endpoint, you'll first need to retrieve an access token. In
 
 - __blog__:                                (array) Blog specific information.
   - __is_connected__:                      (bool) Is the site connected to WordPress.com?
-  - __has_backups_credentials__:           (bool) Does the site have Jetpack Backup SSH credentials set?
+  - __has_backups_credentials__:           (bool) Does the site have Jetpack Backup SSH/FTP credentials set?
 - __products__:                            (array) A list with everything that was provisioned for this site.
   - __slug__:                              (string) The slug of the provisioned product.
   - __is_provisioned_by_partner__:         (bool) Was this product provisioned by a partner?

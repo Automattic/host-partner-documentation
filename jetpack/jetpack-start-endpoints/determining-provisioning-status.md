@@ -41,7 +41,7 @@ To query this status endpoint, you'll first need to retrieve an access token. In
 - __is_provisioned_by_calling_partner__: (bool) Does the site have a plan that was provisioned by the partner making this status request?
 - __is_connected__:                      (bool) Is the site connected to WordPress.com?
 - __has_pending_plan__:                  (bool) Does the site have a pending plan that requires connection authorization?
-- __has_backups_credentials__:           (bool) Does the site have Jetpack Backup SSH credentials set?
+- __has_backups_credentials__:           (bool) Does the site have Jetpack Backup SSH/FTP credentials set?
 - __products__:                          (array) Additional product items provisioned for the site including Jetpack backups products and other items.
   - __product__:                         (string) The slug of the provisioned product.
   - __is_partner_product__:              (bool) Was this product provisioned by a partner?

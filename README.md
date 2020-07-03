@@ -19,6 +19,7 @@ If you have any technical questions or concerns, don’t hesitate to get in touc
   - [Monitor downtime notificatiosn webhook](jetpack/monitor-downtime-notifications-webhook.md)
   - [Magic mobile links](jetpack/jetpack-start-endpoints/mobile-magic-link.md)
   - [Setting Backups SSH credentials](jetpack/jetpack-start-endpoints/setting-backups-ssh-credentials.md)
+  - [Setting Backups FTP credentials](jetpack/jetpack-start-endpoints/setting-backups-ftp-credentials.md)
   - [Errors](jetpack/jetpack-start-endpoints/errors.md)
 - WooCommerce
   - [Overview](woocommerce/overview.md)
