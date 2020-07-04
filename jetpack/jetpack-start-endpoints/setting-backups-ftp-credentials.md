@@ -14,10 +14,10 @@ To query this endpoint, you'll first need to retrieve an access token. Informati
 
 ### Request Parameters
 
-- __ssh_user__:                    Set FTP user.
-- __ssh_pass__:        (optional*) Set FTP password.
-- __ssh_host__:                    Set FTP host.
-- __ssh_port__:        (optional)  Set FTP port. Will default to 21 is missing.
+- __ftp_user__:                    Set FTP user.
+- __ftp_pass__:        (optional)  Set FTP password.
+- __ftp_host__:                    Set FTP host.
+- __ftp_port__:        (optional)  Set FTP port. Will default to 21 is missing.
 
 #### Successful response
 
