@@ -10,10 +10,11 @@ If you have any technical questions or concerns, don’t hesitate to get in touc
   - Plan provisioning
     - [Via CLI](jetpack/plan-provisioning.md)
     - [Via direct API call](jetpack/jetpack-start-endpoints/plan-provisioning.md)
-  - [Controlling the redirect after a user finishes connection authorization](jetpack/redirect-after-authorization.md)
   - Checking status
     - [Connection status](jetpack/determining-connection-status.md)
     - [Provisioning status](jetpack/jetpack-start-endpoints/determining-provisioning-status-v1.4.md)
+  - [Plan cancellation](jetpack/jetpack-start-endpoints/plan-cancellation.md)
+  - [Controlling the redirect after a user finishes connection authorization](jetpack/redirect-after-authorization.md)
   - [Upgrade paths](jetpack/jetpack-start-endpoints/upgrade-paths.md)
   - [Managing modules](jetpack/managing-modules.md)
   - [Upgrade redirection](jetpack/upgrade-redirection.md)
