@@ -5,7 +5,7 @@ Not all Jetpack product offerings should be provisioned concurrently. Some produ
 The only time when we allow products with overlapping functionality to be provisioned is when the product to be provisioned is a superset of a product already in place. For example, Jetpack Professional includes Realtime Backups as part of its functionality. Consider these two scenarios:
 
 1. A site already has Realtime Backups provisioned. A hosting partner wants to provision Jetpack Professional. Even though Jetpack Professional already includes Realtime Backups, this action *will* be allowed as the site would be gaining extra functionality.
-2. A site already has Jetpack Professional provisioned. A hosting partner wants to provision Realtime Backups. This *will not* be allowed because the site would not gain anything from provisioning Realtime Backups as that same functionality is already included in the existing Jetpack Professional plan. 
+2. A site already has Jetpack Professional provisioned. A hosting partner wants to provision Realtime Backups. This *will not* be allowed because the site would not gain anything from provisioning Realtime Backups as that same functionality is already included in the existing Jetpack Professional plan.
 
 ## Getting an access token
 
@@ -17,7 +17,7 @@ To query this status endpoint, you'll first need to retrieve an access token. In
 - __URL__:    `https://public-api.wordpress.com/rest/v1.3/jpphp/{$siteOrBlogId}/upgrade-paths`
 
 `$siteOrBlogId` can either be:
- 
+
  - The WordPress.com blog ID.
  - The site's domain and path where `/` in the path is replaced with `::`. For example:
 
@@ -45,7 +45,14 @@ The response will include as top level keys the name of the product family that 
         "personal",
         "premium",
         "professional"
+    ],
+	"jetpack-scan": [
+        "jetpack-scan"
+    ],
+	"jetpack-anti-spam": [
+        "jetpack-anti-spam"
     ]
+
 }
 ```
 
