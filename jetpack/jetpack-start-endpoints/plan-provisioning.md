@@ -17,7 +17,11 @@ Plans can be provisioned by making a request using your partner token from the s
 
 - __local_user__:      The username, ID or email on the local website (not the WordPress.com username) that should own the plan. The corresponding user _must_ already exist.
 - __siteurl__:         The URL where the WordPress core files reside.
-- __plan__:            A slug representing which plan or item to provision. One of `free`, `personal`, `premium`, or `professional` for plans. For backups, either `jetpack-backup-realtime` or `jetpack-backup-daily`
+- __plan__:            A slug representing which plan or item to provision.
+    - Plans: `free`, `personal`, `premium`, or `professional`.
+    - Backups: `jetpack-backup-realtime` or `jetpack-backup-daily`.
+    - Scan: `jetpack-scan`
+    - Anti Spam: `jetpack-anti-spam`
 - __force_register__:  (optional) A true/false value indicating whether to re-register a site even if we already have tokens for it. Useful for sites that have gotten into a bad state.
 - __force_connect__:   (optional) A true/false value indicating whether to re-connect a user even if we already have tokens for them. Useful for sites that have gotten into a bad state.
 - __onboarding__:      (optional) If true, put the user through our onboarding wizard for new sites.
