@@ -52,7 +52,6 @@ The response will include as top level keys the name of the product family that 
 	"jetpack-anti-spam": [
         "jetpack-anti-spam"
     ]
-
 }
 ```
 
