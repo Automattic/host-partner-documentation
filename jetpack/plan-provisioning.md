@@ -36,6 +36,10 @@ Further in this document, you will find a few CLI commands with various argument
 - `ssh-pass`              : The SSH password for Jetpack Backups remote access.
 - `ssh-private-key`       : The local path to the SSH private key file for Jetpack Backups remote access.
 - `ssh-port`              : The SSH port for Jetpack Backups remote access.
+- `ftp-host`              : The FTP host for Jetpack Backups remote access.
+- `ftp-user`              : The FTP user for Jetpack Backups remote access.
+- `ftp-pass`              : The FTP password for Jetpack Backups remote access.
+- `ftp-port`              : The FTP port for Jetpack Backups remote access.
 
 _Note: All the SSH parameters are optional but if you pass `ssh-user` you will need to either pass `ssh-pass` or `ssh-private-key`._
 
