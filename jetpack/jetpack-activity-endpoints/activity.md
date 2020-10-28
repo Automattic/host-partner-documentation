@@ -1,5 +1,7 @@
 # Fetch Activity for a Site
 
+Returns a list of activities for the specified site. 
+
 ### Endpoint Information
 
 - __Method__: GET
@@ -13,11 +15,11 @@
 - __before__: (date) End of date range.
 - __by__
 - __date_range__
-- __group__: (string, array) List of activity types to group by.
+- __group__: (string, array) List of activity types to filter on, examples: `plugin, theme, rewind`.
 - __locale__
 - __name__
 - __not_group__
-- __number__
+- __number__: (number) Total number of activities to return.
 - __on__
 - __page__
 - __search_after__
@@ -94,3 +96,6 @@
 https://public-api.wordpress.com/wpcom/v2/sites/155308227/activity?_envelope=1&aggregate=1&number=1000
 
 ### Notes
+
+Full backup complete events and restore events are in group `rewind`. Events that can be restored to (full snapshots and incremental changes) have the property `is_rewindable: true`.
+
