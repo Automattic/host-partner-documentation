@@ -93,7 +93,7 @@ Returns a list of activities for the specified site.
 
 ### Example
 
-https://public-api.wordpress.com/wpcom/v2/sites/155308227/activity?_envelope=1&aggregate=1&number=1000
+`https://public-api.wordpress.com/wpcom/v2/sites/155308227/activity?aggregate=1&number=1000`
 
 ### Notes
 
