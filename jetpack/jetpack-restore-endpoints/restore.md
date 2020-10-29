@@ -12,7 +12,7 @@ Perfrom a restore on the given site to the specified timestamp.
 ### Request Parameters
 
 - __roleName__: (string) The credential role to restore to, one of `main|alternate|import`.
-- __types__: (string, array) Data and file types to restore, one or more of `all|themes|plugins|uploads|sqls|contents|roots`.
+- __types__: (optional string / array) Data and file types to restore, one or more of `all|themes|plugins|uploads|sqls|contents|roots`. Defaults to `all`.
 - __destinationSiteName__: (optional string) Title to give the site when using the `alternate` role.
 
 ### Successful response
@@ -28,4 +28,13 @@ Restore site 155308227 to 10/29/2020 12:47pm UTC:
 The restore will use the closest full daily snapshot not newer than the given timestamp, and (where available) append more recent incremental updates not newer than the given timestamp PLUS any immutable incremental updates (such as WooCommerce orders) up to the current time.
 
 For a regular restore use the 'main' `roleName`. 'alternate' is for cloning to a different site and 'import' is reserved for internal use.
+
+Restore types:
+- `all`: Everything
+- `themes`: Themes folder
+- `plugins`: Plugins folder
+- `uploads`: Uploads folder
+- `sqls`: Database tables
+- `contents`: wp-content folder
+- `roots`: WordPress install root folder
 
