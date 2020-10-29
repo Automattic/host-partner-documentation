@@ -15,7 +15,7 @@ Returns a list of activities for the specified site.
 - __before__: (date) End of date range.
 - __by__
 - __date_range__
-- __group__: (string, array) List of activity types to filter on, examples: `plugin, theme, rewind`.
+- __group__: (string, array) List of activity types to filter on, examples: `plugin, theme, rewind`. See also the [group counts endpoint.](jetpack/jetpack-activity-endpoints/activity-count.md)
 - __locale__
 - __name__
 - __not_group__
