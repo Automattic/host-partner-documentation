@@ -23,6 +23,9 @@ If you have any technical questions or concerns, don’t hesitate to get in touc
   - [Setting Backups SSH credentials](jetpack/jetpack-start-endpoints/setting-backups-ssh-credentials.md)
   - [Setting Backups FTP credentials](jetpack/jetpack-start-endpoints/setting-backups-ftp-credentials.md)
   - [Errors](jetpack/jetpack-start-endpoints/errors.md)
+  - Activity, Backup, and Scan
+    - [Fetch Activities](jetpack/jetpack-activity-endpoints/activity.md)
+    - [Activity Group Counts](jetpack/jetpack-activity-endpoints/activity-count.md)
 - WooCommerce
   - [Overview](woocommerce/overview.md)
   - [Provison/Register plan](woocommerce/plan-register.md)
