@@ -1,6 +1,6 @@
 # Queue a Restore
 
-Perfrom a restore on the given site to the specified timestamp.
+Perform a restore on the given site to the specified timestamp.
 
 ### Endpoint Information
 
