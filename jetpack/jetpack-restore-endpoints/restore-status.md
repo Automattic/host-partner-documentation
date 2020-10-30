@@ -19,7 +19,6 @@ The `restore_status` object contains the following fields:
 - __percent__: (number) current restore progress.
 - __status__: (string) One of `finished|fail|queued|aborted|running|killed`.
 - __rewind_id__: (number) the restore ID.
-###ID.
 - __is_dismissed__: (boolean) Can be used to track UI display status, refers to whether UI notice has been dismissed by the user.
 - __context__: (string) The credentials role, one of `main|alternate|import`.
 - __message__: (string) Further info about the status.
