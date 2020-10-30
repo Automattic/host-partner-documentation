@@ -17,6 +17,15 @@ Perform a restore on the given site to the specified timestamp.
 
 ### Successful response
 
+```
+{
+  "ok":true,
+  "error":"",
+  "restore_id":234725,
+  "job_id":4661184823
+}
+```
+
 ### Example
 
 Restore site 155308227 to 10/29/2020 12:47pm UTC:
