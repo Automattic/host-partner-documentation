@@ -26,6 +26,8 @@ If you have any technical questions or concerns, don’t hesitate to get in touc
   - Activity, Backup, and Scan
     - [Fetch Activities](jetpack/jetpack-activity-endpoints/activity.md)
     - [Activity Group Counts](jetpack/jetpack-activity-endpoints/activity-count.md)
+	- [Queue Restore](jetpack/jetpack-restore-endpoints/restore.md)
+	- [Restore Status](jetpack/jetpack-restore-endpoints/restore-status.md)
 - WooCommerce
   - [Overview](woocommerce/overview.md)
   - [Provison/Register plan](woocommerce/plan-register.md)
