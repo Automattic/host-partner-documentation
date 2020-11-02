@@ -8,6 +8,8 @@ Returns a list of activities for the specified site.
 - __URL__: `https://public-api.wordpress.com/wpcom/v2/sites/<blog_id>/activity`
 - __blog_id__: Site to request activities for.
 
+Authentication: [Access token](/jetpack/jetpack-start-endpoints/authentication.md).
+
 ### Request Parameters
 
 - __action__
