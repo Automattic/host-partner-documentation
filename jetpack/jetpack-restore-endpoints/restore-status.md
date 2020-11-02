@@ -9,6 +9,8 @@ Returns the current status of a given restore for the specified site.
 - __blog_id__: Site to request info for.
 - __restore_id__: The restore to request info for.
 
+Authentication: [Access token](/jetpack/jetpack-start-endpoints/authentication.md).
+
 ### Request Parameters
 
 None.
