@@ -9,6 +9,8 @@ Perform a restore on the given site to the specified timestamp.
 - __blog_id__: (number) Site to restore.
 - __timestamp__: (number) Unix timestamp to restore to.
 
+Authentication: [Access token](/jetpack/jetpack-start-endpoints/authentication.md).
+
 ### Request Parameters
 
 - __roleName__: (string) The credential role to restore to, one of `main|alternate|import`.
