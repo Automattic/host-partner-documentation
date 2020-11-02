@@ -8,6 +8,8 @@ Returns a list of available activity groups for a site along with their counts.
 - __URL__: `https://public-api.wordpress.com/wpcom/v2/sites/<blog_id>/activity/count/group`
 - __blog_id__: Site to request groups for.
 
+Authentication: [Access token](/jetpack/jetpack-start-endpoints/authentication.md).
+
 ### Request Parameters
 
 - __number__: (number) Total number of activities to search.
