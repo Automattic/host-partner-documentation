@@ -16,7 +16,7 @@ None
 
 ### Response Format
 
-Array of objects, each containing information about one backup attempt;
+Array of objects, each containing information about one backup attempt:
 
 ```
 [{
