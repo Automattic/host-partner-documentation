@@ -1,4 +1,4 @@
-# List Backup
+# List Backups
 
 Return a list of the last 10 backup attempts.
 
@@ -16,40 +16,43 @@ None
 
 ### Response Format
 
-Array of objects, each containing information about one backup attempt:
+Array of objects with the following fields:
+
+- __id__: (number) Backup id.
+- __started__: (date) Backup start time.
+- __last_updated__: (date) Time of the most recent event, or backup end time if complete.
+- __status__: (string) Backup status, one of `finished|started|no-credentials|credential-error|not-accessible|error|error-will-retry`.
+- __period__: (number) Unix timestamp representation of backup start time.
+- __is_scan__: (boolean) `true` if a security scan was performed as part of the backup (depends on plan).
+- __has_snapshot__: (boolean) `true` if backup was a success and a snapshot was stored.
+- __stats__: (object) Information about the number and types of items backed up. Object with keys `themes`, `plugins`, `uploads`, `tables`, `prefix` (table prefix), and `wp_version`.
+
+### Successful Response
 
 ```
 [{
-  id: (string) The backup ID
-  started: (string) Backup started datetime ("2019-11-08 18:44:35")
-  last_updated: (string) Backup last updated datetime ("2019-11-08 18:44:48")
-  status: (string) Backup status ("finished", "started", "no-credentials", "no-credentials-atomic", "credential-error", "not-accessible", "error", "error-will-retry")
-  period: (string) Backup period in unix timestamp ("1573238675")
-  has_snapshot: (bool) Backup has snapshot
-  stats: (object) Backup stats, if set {
-    themes: (object) Backed up themes stats, if set {
-      count: (int) Backed up themes count, if set
-      list: (array) List of backed up theme slugs, if set
-    }
-    plugins: (object) Backed up plugins stats, if set {
-      count: (int) Backed up plugins count, if set
-      list: (array) List of backed up plugin slugs, if set
-    }
-    uploads: (object) Backed up uploaded files stats, if set {
-      count: (int) Backed up uploaded files count, if set
-      images: (int) Backed up uploaded images count, if set
-      movies: (int) Backed up uploaded movies count, if set
-      audio: (int) Backed up uploaded audio count, if set
-      archives: (int) Backed up uploaded archives count, if set
-    }
-    tables: (object) Backed up tables stats, if set
-      table_name: (object) Backed up table stats, if set
-      rows: (int) Count of backed up rows in table, if set
-    }
-  }
-  prefix: (string) WP prefix ("wp_")
-  wp_version: (string) WP version ("5.2.4")
+  has_snapshot: true
+  id: "134296140"
+  is_backup: "1"
+  is_scan: "1"
+  last_updated: "2020-11-05 13:23:36"
+  percent: "100"
+  period: "1604582319"
+  started: "2020-11-05 13:18:40"
+  stats: {themes: {…}, plugins: {…}, uploads: {…}, tables: {…}, prefix: "wp_", …}
+  status: "finished"
 },
-...
+…
 ]
 ```
+
+### Example
+
+Fetch last 10 backup attempts for site `155308227`:
+
+`https://public-api.wordpress.com/wpcom/v2/sites/155308227/rewind/backups`
+
+### Notes
+
+
+
