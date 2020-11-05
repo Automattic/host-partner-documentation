@@ -38,5 +38,5 @@ Prepare download of the latest backup data for site `155308227`:
 
 ### Notes
 
-After calling this endpoint, poll for progress of the archive preparation with the the download status endpoint.
+After calling this endpoint, poll for progress of the archive preparation with the the [download status endpoint](/jetpack/jetpack-backup-endpoints/download.md).
 
