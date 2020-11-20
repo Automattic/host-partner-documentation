@@ -7,7 +7,7 @@ Lookup an activity by rewind id.
 - __Method__: GET
 - __URL__: `https://public-api.wordpress.com/wpcom/v2/sites/<blog_id>/activity<rewind_id>`
 - __blog_id__: Site to request activities for.
-- __rewind_id__: ID of the activity to request, see the [site activity endpoint](/jetpack/jetpack-activity-endpoints/activity.md).
+- __rewind_id__: ID of the activity to request, returned from the [site activity endpoint](/jetpack/jetpack-activity-endpoints/activity.md).
 
 Authentication: [Access token](/jetpack/jetpack-start-endpoints/authentication.md).
 
@@ -34,3 +34,11 @@ None
   "summary": "Backup and scan complete",
 }
 ```
+
+### Example
+
+`https://public-api.wordpress.com/wpcom/v2/sites/155308227/activity/1605878792.626`
+
+### Notes
+
+None.
