@@ -18,7 +18,7 @@ If you have any technical questions or concerns, don’t hesitate to get in touc
   - [Upgrade paths](jetpack/jetpack-start-endpoints/upgrade-paths.md)
   - [Managing modules](jetpack/managing-modules.md)
   - [Upgrade redirection](jetpack/upgrade-redirection.md)
-  - [Monitor downtime notificatiosn webhook](jetpack/monitor-downtime-notifications-webhook.md)
+  - [Monitor downtime notifications webhook](jetpack/monitor-downtime-notifications-webhook.md)
   - [Magic mobile links](jetpack/jetpack-start-endpoints/mobile-magic-link.md)
   - [Setting Backups SSH credentials](jetpack/jetpack-start-endpoints/setting-backups-ssh-credentials.md)
   - [Setting Backups FTP credentials](jetpack/jetpack-start-endpoints/setting-backups-ftp-credentials.md)
