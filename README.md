@@ -7,6 +7,7 @@ If you have any technical questions or concerns, don’t hesitate to get in touc
 ## Documentation links
 
 - Jetpack
+  - [Authentication](jetpack/jetpack-start-endpoints/authentication.md)
   - Plan provisioning
     - [Via CLI](jetpack/plan-provisioning.md)
     - [Via direct API call](jetpack/jetpack-start-endpoints/plan-provisioning.md)
