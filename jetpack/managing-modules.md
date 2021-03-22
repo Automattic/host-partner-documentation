@@ -63,7 +63,3 @@ function jetpack_docs_filter_active_modules( $modules ) {
 	return array_values( array_merge( $modules, array( 'photon' ) ) );
 }
 ```
-
-Note: The Jetpack admin UI isn't yet aware of this filter. So, if you force a filter to be active, the UI to enable/disable that module still displays. This issue is being tracked at this URL:
-
-[https://github.com/Automattic/jetpack/issues/8800](https://github.com/Automattic/jetpack/issues/8800)
