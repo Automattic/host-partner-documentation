@@ -10,7 +10,7 @@ At times, it may be desirable to check the provisioning status of a site to get 
 - Was the plan provisioned by a given partner?
 - Is the site connected to WordPress.com?
 
-To provide the provisioning status of a site, there is the `/jpphp/{$site}/status` endpoint.
+To provide the provisioning status of a site, there is the `/jpphp/{$siteOrBlogId}/status` endpoint.
 
 ## Getting an access token
 
@@ -19,9 +19,12 @@ To query this status endpoint, you'll first need to retrieve an access token. In
 ## Endpoint Information
 
 - __Method__: GET
-- __URL__:    `https://public-api.wordpress.com/rest/v1.3/jpphp/{$site}/status`
+- __URL__:    `https://public-api.wordpress.com/rest/v1.3/jpphp/{$siteOrBlogId}/status`
 
-`$site` is the site's domain and path where `/` in the path is replaced with `::`. For example:
+`$siteOrBlogId` can either be:
+ 
+ - The WordPress.com blog ID.
+ - The site's domain and path where `/` in the path is replaced with `::`. For example:
 
 | Site URL              | $site Identifier        |
 | --------------------- | -------------------     |
