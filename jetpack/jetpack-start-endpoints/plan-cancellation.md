@@ -5,9 +5,12 @@ Plans can be cancelled by making a request using your partner token from the ste
 ### Endpoint Information (/partner-cancel)
 
 - __Method__: POST
-- __URL__:    `https://public-api.wordpress.com/rest/v1.3/jpphp/{$site}/partner-cancel`
+- __URL__:    `https://public-api.wordpress.com/rest/v1.3/jpphp/{$siteOrBlogId}/partner-cancel`
 
-`$site` is the site's domain and path where `/` in the path is replaced with `::`. For example:
+`$siteOrBlogId` can either be:
+ 
+ - The WordPress.com blog ID.
+ - The site's domain and path where `/` in the path is replaced with `::`. For example:
 
 | Site URL              | $site Identifier        |
 | --------------------- | -------------------     |
