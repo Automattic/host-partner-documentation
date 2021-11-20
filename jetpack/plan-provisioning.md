@@ -26,7 +26,7 @@ Further in this document, you will find a few CLI commands with various argument
 - `partner_id`            : Provided to you when we provision your partner account.
 - `partner_secret`        : Provided to you when we provision your partner account.
 - `user`                  : The ID, email address, or login of a valid user on the WordPress installation hosted by the partner. See: https://make.wordpress.org/cli/handbook/config/#global-parameters.
-- `plan`                  : One of `free`, `personal`, `premium`, or `professional`. The partner's account will need to have this type of plan allowed.
+- `plan`                  : The plan or product you wish to provision. These includes - but are not limited to - `free`, `personal`, `premium` and `professional`. The partner's account will need to have these types of plans allowed.
 - `url`                   : This optional URL value is used to select a specific subsite in a network. See: https://make.wordpress.org/cli/handbook/config/#global-parameters.
 - `onboarding`            : This optional value can be set to `1` to enabled an onboarding wizard.
 - `partner_tracking_id`   : This optional value allows us to attach specific actions to a specific site on the partner's side. This has proved useful in cases where users had multiple staging sites.
@@ -86,6 +86,10 @@ The way this works is that you have access to an API to create new “partner ke
 Those customers (e.g. hosts or web professionals) then use those keys to provision plans to their WordPress sites.
 
 These generated partner keys can have limits – certain numbers of personal, premium or professional plans. You (the reseller) are responsible for paying Automattic a wholesale rate for any plans generated using these keys, and in turn you can bill your customers at a markup.
+
+_**Note**: Only [Jetpack legacy bundles](https://jetpack.com/support/jetpack-plan-equivalency-chart/) are specifically mentioned in the documentation but more recent products/plans like `complete` or `jetpack-videopress` can be issued as well, if the partner has access to them._
+
+https://jetpack.com/support/jetpack-plan-equivalency-chart/
 
 When your customers buy a bundle of Jetpack plans, you create a new key by generating a “client_credentials”-granted oauth token. With that token, you can make a request to the jpphp/partner-keys/new API, like this (assumes you have curl and the excellent json-parsing command jq installed):
 
