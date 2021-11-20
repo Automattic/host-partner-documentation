@@ -89,8 +89,6 @@ These generated partner keys can have limits – certain numbers of personal, pr
 
 _**Note**: Only [Jetpack legacy bundles](https://jetpack.com/support/jetpack-plan-equivalency-chart/) are specifically mentioned in the documentation but more recent products/plans like `complete` or `jetpack-videopress` can be issued as well, if the partner has access to them._
 
-https://jetpack.com/support/jetpack-plan-equivalency-chart/
-
 When your customers buy a bundle of Jetpack plans, you create a new key by generating a “client_credentials”-granted oauth token. With that token, you can make a request to the jpphp/partner-keys/new API, like this (assumes you have curl and the excellent json-parsing command jq installed):
 
 ```bash
