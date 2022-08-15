@@ -8,6 +8,13 @@ If you have any questions or issues, our contact information can be found on the
 
 Plans can be provisioned by making a request using your partner token from the step above along with local_user, siteurl, and plan parameters.
 
+### Pending Activation
+
+We will create a "Pending Activation" if the WordPress site isn't connected to Jetpack or isn't responding at the moment of provisioning. A pending activation:
+
+* Will automatically be attached to the site when it connects to Jetpack (identified by the `siteurl` parameter used in the request).
+* Lasts for 14 days. If the Pending Activation hasn't been "claimed" within 14 days, then we will see it as invalid and will require a new provisioning attempt.
+
 ### Endpoint information (/provision)
 
 - __Method__: POST
