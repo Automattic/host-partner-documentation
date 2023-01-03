@@ -8,8 +8,8 @@ Jetpack Start is a collection of scripts that you can run in order to provision 
 
 In general, you only need to know about two scripts:
 
-1. `bin/partner-provision.sh` - when the user purchases a plan, or bundle of plans, you’ll run this script to provision a plan
-2. `bin/partner-cancel.sh` - when the user cancels their plan, you’ll run this script to cancel the plan on WordPress.com, and you will no longer be billed for this site
+1. `tools/partner-provision.sh` - when the user purchases a plan, or bundle of plans, you’ll run this script to provision a plan
+2. `tools/partner-cancel.sh` - when the user cancels their plan, you’ll run this script to cancel the plan on WordPress.com, and you will no longer be billed for this site
 
 A Jetpack-Start-provisioned plan has no expiry or renewal date, which means you (and your customers) won’t have to worry about monthly or yearly renewals.
 
@@ -50,8 +50,8 @@ We like to think that integrating with Jetpack Start is fairly easy. From beginn
 1. Obtain a Jetpack Partner ID and token, which we will provide to you
 2. Ensure Jetpack is installed on the WordPress site:
     - `wp plugin install jetpack`
-3. Run the following script with the Jetpack Partner ID and token that were provided to you
-    - `sh ./wp-content/plugins/jetpack/bin/partner-provision.sh --partner_id={partner_id} --partner_secret={partner_secret} --user={id_or_email} --plan={plan_slug} [--url=http://example.com]`
+3. Run the partner provision script with the Jetpack Partner ID and token that were provided to you
+    - `sh partner-provision.sh --partner_id={partner_id} --partner_secret={partner_secret} --user={id_or_email} --plan={plan_slug} [--url=http://example.com]`
     - The script makes a call to our servers to register the site (if necessary) and provision the requested plan and any additional plugins such as VaultPress and Akismet
 4. If the script is successful, it will exit with code 0, and a JSON string. If any next steps are required in the browser, the JSON will include a URL to send your user to. E.g
     - `{ success: true, next_url: "http://wordpress.com/start/plans?foo=bar", "auth_required": true }`
