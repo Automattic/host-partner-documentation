@@ -107,6 +107,7 @@ HTTP/1.1 200 OK
 | `url` | `string` | Customer site URL. |
 | `customer` | `object` | Customer object. See below. |
 | `products` | `array` | Array of product slugs. This is optional. |
+| `metadata` | `object` | Whitelisted key-value pair of custom data. This is optional. |
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -126,7 +127,8 @@ HTTP/1.1 200 OK
     "wpcom_user_id": 123,
     "wpcom_access_token": "#K(EkA1*$gx*!JrC#DCe45meEAllcnXjhKNM2Eu!if%^BAAx3z(AaOw@t(CVFnjK)))"
   },
-  "products": [ 'facebook-for-woocommerce', 'woocommerce-shipping-ups' ]
+  "products": [ 'facebook-for-woocommerce', 'woocommerce-shipping-ups' ],
+  "metadata": { "plan": "custom-plan" }
 }
 ```
 
