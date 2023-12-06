@@ -1,3 +1,5 @@
+# DEPRECATED: Please see docs on how to use the API directly.
+
 # Provisioning and Cancelling Jetpack Plans
 
 In this document, we’ll briefly go over how to provision and cancel Jetpack plans via the shell scripts that ship with Jetpack. If you have any questions or issues, our contact information can be found on the [README.md document](../README.md).

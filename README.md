@@ -12,7 +12,7 @@ If you have any technical questions or concerns, don’t hesitate to get in touc
   - Jetpack Start API:
       - [Authentication](jetpack/jetpack-start-endpoints/authentication.md)
       - Plan provisioning
-        - [Via CLI](jetpack/plan-provisioning.md)
+        - ~~[Via CLI](jetpack/plan-provisioning.md)~~ (deprecated)
         - [Via direct API call](jetpack/jetpack-start-endpoints/plan-provisioning.md)
       - Checking status
         - [Connection status](jetpack/determining-connection-status.md)
