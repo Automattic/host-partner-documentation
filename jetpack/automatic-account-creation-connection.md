@@ -1,6 +1,6 @@
 # Automatic WordPress.com Account Creation and Connection
 
-As of mid-October 2018, when a hosting partner provisions a site via `https://public-api.wordpress.com/rest/v1.3/jpphp/provision`, whether by a direct API call or via the `partner-provision.sh` shell script, there is logic in the API that *may* greatly simplify the provisioning and connection process.
+As of mid-October 2018, when a hosting partner provisions a site via `https://public-api.wordpress.com/rest/v1.3/jpphp/provision`, whether by a direct API call or via the -now deprecated- `partner-provision.sh` shell script, there is logic in the API that *may* greatly simplify the provisioning and connection process.
 
 ## Automatic account creation pre-requisites
 
