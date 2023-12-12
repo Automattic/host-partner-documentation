@@ -1,8 +1,8 @@
 # Getting a Jetpack Partner access token
 
-When you become a Jetpack partner, we will provide you with your partner ID and a secret key. Typically you just pass these values directly in to the `bin/partner-provision.sh` and `bin/partner_cancel.sh` scripts. But, when calling the WordPress.com API directly, you'll first need to get an access token with for your partner ID with a scope of `jetpack-partner`.
+When you become a Jetpack partner, we will provide you with your partner ID and a secret key. Previously, you would have just passed these values directly in to the `bin/partner-provision.sh` and `bin/partner_cancel.sh` scripts, but those are now deprecated, so the only option is to call the API directly. To do so, you'll first need to get an access token with for your partner ID with a scope of `jetpack-partner`.
 
-To do that, you'll make a `POST` request to the `https://public-api.wordpress.com/oauth2/token` endpoint passing with the request parameters mentioned below.
+To get a token, you'll make a `POST` request to the `https://public-api.wordpress.com/oauth2/token` endpoint passing with the request parameters mentioned below.
 
 A successful response will include a JSON object with several keys. We are specifically interested in the `access_token` key, so be sure to grab that.
 
