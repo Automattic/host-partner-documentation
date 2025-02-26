@@ -40,6 +40,8 @@ If you have any technical questions or concerns, don’t hesitate to get in touc
   - [Provison/Register plan](woocommerce/plan-register.md)
   - [Cancel plan](woocommerce/plan-cancel.md)
   - [Update URL for a site](woocommerce/update-url.md)
+  - [Update site connected to a plan](woocommerce/update-connected-site.md)
+  - [Install product](woocommerce/install.md)
   - [Product information](woocommerce/product-info.md)
   - [Management via WP-CLI](woocommerce/management-via-wp-cli.md)
 - Account creation
@@ -48,8 +50,9 @@ If you have any technical questions or concerns, don’t hesitate to get in touc
 
 ## Become a hosting partner
 
-If you're not already a hosting partner and you'd like some more information, head on over to [https://jetpack.com/for/hosts/](https://jetpack.com/for/hosts/) to get started!
+If you're not already a hosting partner, and you'd like some more information, head on over to [https://jetpack.com/for/hosts/](https://jetpack.com/for/hosts/) to get started!
 
 ## Change log
 
+- 2025-02-26 Added pages for install and update-connected-site endpoints.
 - 2020-04-27 Added change log. Added page for status endpoint v1.4.

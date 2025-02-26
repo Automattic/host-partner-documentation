@@ -1,6 +1,6 @@
 # Install Product
 
-Installs a product belogns to the host-plan on the linked site.
+Install a product from the plan on the connected site.
 
 ```
 POST /install

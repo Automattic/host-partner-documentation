@@ -1,6 +1,6 @@
 # Update Connected Site
 
-Change the site linked to a host-plan.
+Change the site connected to the plan.
 
 ```
 POST /update-connected-site
