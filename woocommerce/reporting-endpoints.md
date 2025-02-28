@@ -12,15 +12,15 @@ GET /orders
 
 ### Parameters (/orders)
 
-|  Name | Description |
-| ------ | ------------ |
-| `before` | Limit response to host-plan orders created before a given ISO8601 compliant date. |
-| `after` | Limit response to host-plan orders created after a given ISO8601 compliant date. |
-| `status` | Limit result set to host-plan orders assigned one or more statuses. Default: `completed`. |
-| `customer_id` | Limit result set to host-plan orders assigned a specific customer ID. |
-| `page` |  Current page of the collection. Default is `1`. |
-| `per_page` | Maximum number of items to be returned in result set. Default is `20`. Maximum `100`. |
-| `offset` | Offset the result set by a specific number of items. |
+| Name          | Description                                                                               |
+|---------------|-------------------------------------------------------------------------------------------|
+| `before`      | Limit response to host-plan orders created before a given ISO8601 compliant date.         |
+| `after`       | Limit response to host-plan orders created after a given ISO8601 compliant date.          |
+| `status`      | Limit result set to host-plan orders assigned one or more statuses. Default: `completed`. |
+| `customer_id` | Limit result set to host-plan orders assigned a specific customer ID.                     |
+| `page`        | Current page of the collection. Default is `1`.                                           |
+| `per_page`    | Maximum number of items to be returned in result set. Default is `20`. Maximum `100`.     |
+| `offset`      | Offset the result set by a specific number of items.                                      |
 
 ### Example request and response (/orders)
 

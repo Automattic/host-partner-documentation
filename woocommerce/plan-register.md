@@ -102,20 +102,20 @@ HTTP/1.1 200 OK
 
 ### Parameters v1.0
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| `url` | `string` | Customer site URL. |
-| `customer` | `object` | Customer object. See below. |
-| `products` | `array` | Array of product slugs. This is optional. |
+| Name       | Type     | Description                                                  |
+|------------|----------|--------------------------------------------------------------|
+| `url`      | `string` | Customer site URL.                                           |
+| `customer` | `object` | Customer object. See below.                                  |
+| `products` | `array`  | Array of product slugs. This is optional.                    |
 | `metadata` | `object` | Whitelisted key-value pair of custom data. This is optional. |
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| `first_name` | `string` | Customer first name. |
-| `last_name` | `string` | Customer last name. |
-| `email` | `string` | Customer email address. Required |
-| `wpcom_user_id` | `integer` | WordPress.com user ID. Optional if `wpcom_access_token` is passed and will be deprecated in the future. |
-| `wpcom_access_token` | `string` | WordPress.com user access token. |
+| Name                 | Type      | Description                                                                                             |
+|----------------------|-----------|---------------------------------------------------------------------------------------------------------|
+| `first_name`         | `string`  | Customer first name.                                                                                    |
+| `last_name`          | `string`  | Customer last name.                                                                                     |
+| `email`              | `string`  | Customer email address. Required.                                                                       |
+| `wpcom_user_id`      | `integer` | WordPress.com user ID. Optional if `wpcom_access_token` is passed and will be deprecated in the future. |
+| `wpcom_access_token` | `string`  | WordPress.com user access token.                                                                        |
 
 ```code
 {
