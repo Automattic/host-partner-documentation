@@ -44,14 +44,14 @@ HTTP/1.1 200 OK
 
 ### Response v2.0
 
-| Name           | Type     | Description                               |
-|----------------|----------|-------------------------------------------|
-| `request_id`   | `number` | ID of the installtion request.            |
-| `success`      | `bool`   | Status of the installation request.       |
-| `order_id`     | `number` | Order ID in WooCommerce.com.              |
-| `product_id`   | `number` | Product ID in WooCommerce.com.            |
-| `product_slug` | `string` | Slug of the product to install.           |
-| `url`          | `string` | URL of the site the product is installed. |
+| Name           | Type     | Description                                  |
+|----------------|----------|----------------------------------------------|
+| `request_id`   | `number` | ID of the installation request.              |
+| `success`      | `bool`   | Status of the installation request.          |
+| `order_id`     | `number` | Order ID in WooCommerce.com.                 |
+| `product_id`   | `number` | Product ID in WooCommerce.com.               |
+| `product_slug` | `string` | Slug of the product to install.              |
+| `url`          | `string` | URL of the site the product is installed on. |
 
 ```
 HTTP/1.1 200 OK
