@@ -35,23 +35,23 @@ HTTP/1.1 200 OK
 
 ### Parameters v2.0
 
-| Name           | Type     | Description                            |
-|----------------|----------|----------------------------------------|
-| `url`          | `string` | URL of the site to install the product |
-| `order_id`     | `number` | Order ID in WooCommerce.com            |
-| `product_slug` | `string` | Slug of the product to install         |
+| Name           | Type     | Description                             |
+|----------------|----------|-----------------------------------------|
+| `url`          | `string` | URL of the site to install the product. |
+| `order_id`     | `number` | Order ID in WooCommerce.com.            |
+| `product_slug` | `string` | Slug of the product to install.         |
 
 
 ### Response v2.0
 
-| Name           | Type     | Description                              |
-|----------------|----------|------------------------------------------|
-| `request_id`   | `number` | ID of the installtion request            |
-| `success`      | `bool`   | Status of the installation request       |
-| `order_id`     | `number` | Order ID in WooCommerce.com              |
-| `product_id`   | `number` | Product ID in WooCommerce.com            |
-| `product_slug` | `string` | Slug of the product to install           |
-| `url`          | `string` | URL of the site the product is installed |
+| Name           | Type     | Description                               |
+|----------------|----------|-------------------------------------------|
+| `request_id`   | `number` | ID of the installtion request.            |
+| `success`      | `bool`   | Status of the installation request.       |
+| `order_id`     | `number` | Order ID in WooCommerce.com.              |
+| `product_id`   | `number` | Product ID in WooCommerce.com.            |
+| `product_slug` | `string` | Slug of the product to install.           |
+| `url`          | `string` | URL of the site the product is installed. |
 
 ```
 HTTP/1.1 200 OK

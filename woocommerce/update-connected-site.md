@@ -32,17 +32,17 @@ HTTP/1.1 200 OK
 
 ### Parameters v2.0
 
-| Name       | Type     | Description                 |
-|------------|----------|-----------------------------|
-| `url`      | `string` | New customer site URL.      |
-| `order_id` | `number` | Order ID in WooCommerce.com |
+| Name       | Type     | Description                  |
+|------------|----------|------------------------------|
+| `url`      | `string` | New customer site URL.       |
+| `order_id` | `number` | Order ID in WooCommerce.com. |
 
 ### Response v2.0
 
 | Name       | Type     | Description                          |
 |------------|----------|--------------------------------------|
 | `url`      | `string` | New customer site URL.               |
-| `order_id` | `number` | Order ID in WooCommerce.com          |
+| `order_id` | `number` | Order ID in WooCommerce.com.         |
 | `site_id`  | `number` | Customer site ID in WooCommerce.com. |
 
 ```
