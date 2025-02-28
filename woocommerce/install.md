@@ -46,7 +46,7 @@ HTTP/1.1 200 OK
 
 | Name           | Type     | Description                              |
 |----------------|----------|------------------------------------------|
-| `request_id`   | `number` | ID of the installtion request            |
+| `request_id`   | `number` | ID of the installation request            |
 | `success`      | `bool`   | Status of the installation request       |
 | `order_id`     | `number` | Order ID in WooCommerce.com              |
 | `product_id`   | `number` | Product ID in WooCommerce.com            |
