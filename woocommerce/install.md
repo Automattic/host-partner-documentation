@@ -51,7 +51,7 @@ HTTP/1.1 200 OK
 | `order_id`     | `number` | Order ID in WooCommerce.com              |
 | `product_id`   | `number` | Product ID in WooCommerce.com            |
 | `product_slug` | `string` | Slug of the product to install           |
-| `url`          | `string` | URL of the site the product is installed |
+| `url`          | `string` | URL of the site the product is installed on |
 
 ```
 HTTP/1.1 200 OK
